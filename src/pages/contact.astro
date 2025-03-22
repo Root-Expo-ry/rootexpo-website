@@ -1,0 +1,37 @@
+---
+import Body from "../components/Body.astro";
+import SubTitle from "../components/SubTitle.astro";
+import Title from "../components/Title.astro";
+import Layout from "../layouts/BaseLayout.astro";
+---
+
+<Layout title="Contact" description="How to contact organizers?">
+  <Title text="CONTACT" />
+  <SubTitle text="NOT A BUSINESS FESTIVAL" />
+  <Body
+    text={`Asteriski ry
+Invoicing: hallitus@asteriski.fi
+Business ID/Y-tunnus: 3032318-5`}
+  />
+  <Body
+    text={`Digit ry
+Business ID/Y-tunnus: 2285810-4
+Project team: digit@utu.fi`}
+  />
+  <Body
+    text={`Project coordinator:
+Marius Ranta
+mavran@utu.fi
++358 45 2088191`}
+  />
+  <Title text="ABOUT" />
+  <Body
+    text={`The event is organized by project team based on two computer science student associations in University of Turku. We are not-for-profit organizations doing all this in collaboration with city of Turku.`}
+  />
+  <Title text="VENUE" />
+  <Body
+    text={`Visitor and Innovaition Centre Joki - Vierailukeskus Joki
+Cave hall and lobby
+Entrance: Lemminkäisenkatu 12B, 20520 Turku`}
+  />
+</Layout>

@@ -6,8 +6,9 @@
 
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: #D96CEC;
+	--background: #151517;
+	--container: #1D1D1F;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -56,21 +57,22 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+	background-color: var(--background);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+	color: white;
 	font-size: 20px;
 	line-height: 1.7;
+	overflow-x: hidden;
 }
 
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
+	margin: 0;
+	padding: 0;
 }
+
 
 h1,
 h2,
@@ -80,7 +82,7 @@ h5,
 h6 {
 	font-family: 'JetBrains', sans-serif;
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: white;
 	line-height: 1.2;
 }
 

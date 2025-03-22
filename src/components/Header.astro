@@ -4,21 +4,28 @@ import { SITE_TITLE } from "../consts";
 import SocialsLink from "./SocialsLink.astro";
 ---
 
-<header class="m-0 p-0 px-4 bg-white shadow">
+<header class="m-0 p-0 px-4 fixed top-0 left-0 w-full">
   <nav class="flex items-center justify-between">
     <h2 class="m-0 text-base">
-      <a href="/" class="no-underline">{SITE_TITLE}</a>
+      <a href="/" class="no-underline text-white hover:text-var(--accent)"
+        >{SITE_TITLE}</a
+      >
     </h2>
     <div class="internal-links">
       <HeaderLink
-        href="/home"
-        class="p-4 pt-2 pb-2.5 text-black no-underline hover:text-gray-700 border-b-4 border-transparent hover:border-accent active:border-accent"
-        >Home</HeaderLink
+        href="/for-talents"
+        class="p-4 pt-2 pb-2.5 text-white no-underline hover:text-var(--accent) border-b-4 border-transparent hover:border-accent active:border-accent"
+        >For Talents</HeaderLink
       >
       <HeaderLink
-        href="/about"
-        class="p-4 pt-2 pb-2.5 text-black no-underline hover:text-gray-700 border-b-4 border-transparent hover:border-accent active:border-accent"
-        >About</HeaderLink
+        href="/for-employers"
+        class="p-4 pt-2 pb-2.5 text-white no-underline hover:text-var(--accent) border-b-4 border-transparent hover:border-accent active:border-accent"
+        >For Employers</HeaderLink
+      >
+      <HeaderLink
+        href="/contact"
+        class="p-4 pt-2 pb-2.5 text-white no-underline hover:text-var(--accent) border-b-4 border-transparent hover:border-accent active:border-accent"
+        >Contact</HeaderLink
       >
     </div>
     <div class="hidden md:block">

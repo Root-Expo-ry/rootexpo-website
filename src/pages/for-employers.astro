@@ -1,0 +1,59 @@
+---
+import Body from "../components/Body.astro";
+import SubTitle from "../components/SubTitle.astro";
+import Title from "../components/Title.astro";
+import Layout from "../layouts/BaseLayout.astro";
+---
+
+<Layout
+  title="For Employers"
+  description="What value do we bring for the employers?"
+>
+  <Title text="OUR GOAL 🚀" />
+  <SubTitle text="NOT A BUSINESS FESTIVAL" />
+  <Body
+    text={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
+    integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis
+    egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In
+    hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat.
+    Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu
+    non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim.
+    Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed
+    vulputate mi. Dictumst quisque sagittis purus sit amet.`}
+  />
+  <Title text="WHAT WE OFFER? 🌤" />
+  <SubTitle text="THE CHANCE OF THE YEAR TO MEET YOUR FUTURE TALENT" />
+  <ul>
+    <li>
+      Exhibition stand in the epic venue: your choice round standing table
+      and/or regular table, and space for your roll-ups and exhibitors.
+    </li>
+    <li>Jotain muuta tähän: vaik networking.</li>
+    <li>
+      Custom-tailored marketing and visibility in the essential social media
+      platforms including up-to-date company presentation or advertisement, and
+      other content.
+    </li>
+    <li>
+      No bullshit: a chance to speak to the most relevant audience of the career
+      fairs.
+    </li>
+    <li>
+      Value for money: we are trying everything to give an experience valuable
+      more than your company paid off.
+    </li>
+  </ul>
+  <Title text="WHAT WE EXPECT? 💓" />
+  <SubTitle text="YOU TO TAKE EVERYTHING OUT OF OUR EVENT" />
+  <Body
+    text={`Your recruiting process is fair between international and local talent, if possible. We believe in motivation and hunger to learn, to developing ourselves, and to <insert something here>. So do not let go your best teammate if he or she doesn’t speak Finnish or Swedish fluently, yet.
+You are ready to give your best and enjoy the event to its fullest!`}
+  />
+  <Title text="PRICING" />
+  <div class="flex flex-row gap-10">
+    <div class="bg-gray-200 border w-1/3 h-[500px]"></div>
+    <div class="bg-gray-200 border w-1/3 h-[500px]"></div>
+    <div class="bg-gray-200 border w-1/3 h-[500px]"></div>
+  </div>
+</Layout>
