@@ -51,11 +51,6 @@
 	font-display: swap;
 }
 
-@theme {
-	/* --font-montserrat: 'Montserrat', sans-serif; */
-	--font-jetbrains: 'JetBrains', sans-serif;
-}
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
