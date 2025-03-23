@@ -9,8 +9,20 @@ const { title, subtitle, date } = Astro.props;
 ---
 
 <div
-  class="w-screen h-screen bg-[url(/hero.webp)] bg-no-repeat bg-cover flex flex-col justify-center px-12 gap-4"
+  class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center px-12 gap-4"
 >
-  <h1 class="font-bold">{title}</h1>
-  <h5>{subtitle}</h5>
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover">
+    <source src="/hero.webm" type="video/webm" />
+    Your browser does not support the video tag :(
+  </video>
+
+  <div class="relative z-10 text-white">
+    <h1 class="font-bold">{title}</h1>
+    <h5>{subtitle}</h5>
+  </div>
 </div>
