@@ -5,6 +5,7 @@ import Hero from "../components/Hero.astro";
 import SubTitle from "../components/SubTitle.astro";
 import Title from "../components/Title.astro";
 import Layout from "../layouts/BaseLayout.astro";
+import Partners from "../components/Partners.tsx";
 ---
 
 <Layout
@@ -24,6 +25,6 @@ import Layout from "../layouts/BaseLayout.astro";
     <Title text="MAIN PARTNER" />
     <p>Main partner intro here</p>
     <Title text="PARTNERS" />
-    <p>Partner intro here</p>
   </Content>
+  <Partners client:load />
 </Layout>
