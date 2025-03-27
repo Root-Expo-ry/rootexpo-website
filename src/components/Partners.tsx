@@ -200,14 +200,14 @@ const Partners: React.FC<PartnersProps> = ({scrollDirection = "normal", partners
                     <a href={partner.homepageLink.toString()} target="_blank" rel="noopener noreferrer">
                         <div
                             key={`${partner}`}
-                            className="mr-5 flex items-center gap-3 rounded-3xl text-neutral-400 p-3 border border-neutral-700/60 bg-neutral-800/30 shadow-sm hover:shadow-md transition-all duration-300 backdrop-blur-sm"
+                            className="mr-5 flex md:min-w-fit max-w-[90vw] items-center gap-3 rounded-3xl text-neutral-400 p-3 border border-neutral-700/60 bg-neutral-800/30 shadow-sm hover:shadow-md transition-all duration-300 backdrop-blur-sm"
                             data-tech-name={`${partner}`}
                         >
 
-                            <span className="flex h-32 w-32 items-center justify-center rounded-full bg-white/20 p-2 text-lg shadow-inner dark:bg-neutral-700/30">
+                            <span className="flex h-24 w-24 md:h-32 md:w-32 items-center justify-center rounded-full bg-white/20 p-2 text-lg shadow-inner dark:bg-neutral-700/30">
                                 <img src={partner.logo} className="text-xl max-w-full max-h-full" />
                             </span>
-                            <span className="font-medium text-3xl dark:text-white">
+                            <span className="font-medium text-xl md:text-3xl dark:text-white">
                                 {partner.name}
                             </span>
                         </div>
