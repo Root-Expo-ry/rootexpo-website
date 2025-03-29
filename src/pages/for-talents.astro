@@ -5,6 +5,7 @@ import Hero from "../components/Hero.astro";
 import SubTitle from "../components/SubTitle.astro";
 import Title from "../components/Title.astro";
 import Layout from "../layouts/BaseLayout.astro";
+import NumberCards from "../components/NumberCards.astro";
 import Partners from "../components/Partners.tsx";
 ---
 
@@ -29,6 +30,29 @@ import Partners from "../components/Partners.tsx";
 How many side events: 5+ side events by companies (pääpuhe, main partner keynote, job dating, muu lavaohjelma, workshop ja afterwork)
 Companies: 1# most valuable IT Job Fair in Turku region
 `
+    />
+    <NumberCards cards={[
+        {
+          number: "4000+",
+          description: "Talents reached through 7+ student communities",
+        },
+        {
+          number: "50+",
+          description: "Speed interviews",
+        },
+        {
+          number: "3",
+          description: "Universities, one event",
+        },
+        {
+          number: "5+",
+          description: "Side events",
+        },
+        {
+          number: "#1",
+          description: "IT Job Fair in Turku",
+        }
+      ]}
     />
     <Body text=`4,000+ Reach through 7+ student societies` />
     <Body text=`#1 IT Job Fair in Turku` />
