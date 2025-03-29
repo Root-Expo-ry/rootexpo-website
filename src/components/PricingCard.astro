@@ -3,8 +3,9 @@ interface Props {
   name: string;
   price: string;
   points: string[];
+  text: string;
 }
-const { name, price, points } = Astro.props;
+const { name, price, points, text } = Astro.props;
 ---
 
 <div
@@ -39,5 +40,6 @@ const { name, price, points } = Astro.props;
         );
       })
     }
+  <p class="text-base md:text-lg lg:text-xl">{text}</p>
   </ul>
 </div>

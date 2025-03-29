@@ -1,0 +1,58 @@
+---
+import Body from "../components/Body.astro";
+import Content from "../components/Content.astro";
+import Hero from "../components/Hero.astro";
+import SubTitle from "../components/SubTitle.astro";
+import Title from "../components/Title.astro";
+import Layout from "../layouts/BaseLayout.astro";
+import Partners from "../components/Partners.tsx";
+import NumberCards from "../components/NumberCards.astro";
+---
+
+<Layout
+  title="For Talent"
+  description="What value do we bring for the IT talent?"
+>
+  <Hero
+    title="FUELING THE NEXT GENERATION OF IT TALENT."
+    subtitle="We bring together the most exciting companies and talented IT people in the Turku region."
+    date="20.11.2025"
+  />
+  <Content>
+    <Title text="YOU DON'T NEED TO BE PERFECT — JUST CURIOUS." />
+    <Body
+      text=`Root will be held on 20 November 2025 at the Visitor & Innovation Centre Joki in Turku, Finland.
+      Everyone’s welcome — no sign-up needed!`
+    />
+    <Title text="NUMBERS" />
+    <NumberCards
+      cards={[
+        {
+          number: "4000+",
+          description: "Talents reached through 7+ student communities",
+        },
+        {
+          number: "50+",
+          description: "Speed interviews",
+        },
+        {
+          number: "3",
+          description: "Universities, one event",
+        },
+        {
+          number: "5+",
+          description: "Side events",
+        },
+        {
+          number: "#1",
+          description: "IT Job Fair in Turku",
+        },
+      ]}
+    />
+    <Title text="SIDE EVENTS" />
+    <Body text=`Keynotes. Workshops. Afterwork.` />
+  </Content>
+  <Title text="PARTNERS" />
+  <Partners client:load />
+  <Partners client:load scrollDirection="reverse" partnersGroup="1" />
+</Layout>

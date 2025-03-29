@@ -1,0 +1,42 @@
+---
+import Body from "../components/Body.astro";
+import Content from "../components/Content.astro";
+import Pricing from "../components/Pricing.astro";
+import SubTitle from "../components/SubTitle.astro";
+import Title from "../components/Title.astro";
+import Layout from "../layouts/BaseLayout.astro";
+---
+
+<Layout
+  title="For Partners"
+  description="What value do we bring for the partners and employers?"
+>
+  <Content>
+    <Title text="1# IT CAREER FAIR IN TURKU" />
+    <Body
+      text=`We aim to become the largest meeting point for IT talent and employers in the region, attracting a relevant and enthusiastic audience. Participants will have a unique chance to learn about the future of IT through inspiring talks and get helpful tips for job applications directly from you.`
+    />
+    <Body
+      text=`For companies, this event offers great visibility and a chance to meet promising future professionals. We also warmly welcome international talent, providing everyone with a comfortable space to network, be themselves, and create meaningful connections.`
+    />
+    <Title text="WHAT YOU GET" />
+    <Body
+      text=`1. Exhibition stand at the epic venue. Meet the future of IT and promote your company in person.`
+    />
+    <Body
+      text=`2. Multichannel visibility. Get your brand in the spotlight via our website and social media channels.
+`
+    />
+    <Body
+      text=`3. 100% focus on IT. Reach your specific target group.`
+    
+    />
+    <Body
+      text=
+      `4. Not just stands. Gain even more visibility with a workshop, keynote or company presentation.`
+
+    />
+    <Title text="PRICING" />
+    <Pricing />
+  </Content>
+</Layout>
