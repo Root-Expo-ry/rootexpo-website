@@ -1,42 +1,33 @@
 ---
 import Logo from "./Logo.astro";
-import SocialsLink from "./SocialsLink.astro";
+import SocialsLinks from "./SocialsLinks.astro";
 
 const today = new Date();
 ---
 
 <footer class="py-8 px-4 pb-24 bg-container text-center">
-  <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-5 my-2 md:my-4"
-  >
-    <Logo class="hidden lg:block self-center" />
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 md:gap-5 my-2 md:my-4">
+    <Logo class="self-center" />
     <div class="flex flex-col">
       <h3 class="text-accent text-lg md:text-lg lg:text-xl">
-        ROOT EXPO {today.getFullYear()}
+        20.11.2025
         <div
           class="text-white text-xs md:text-sm lg:text-base mt-2 md:mt-4 lg:mt-6"
         >
-          <p>Digit ry & Asteriski ry</p>
-          <p>Vesilinnantie 5</p>
-          <p>krs -1 20100 TURKU</p>
+          <p>Visitor & Innovation Centre Joki</p>
+          <p>Lemminkäisenkatu 12 B</p>
+          <p>20520 TURKU</p>
         </div>
       </h3>
     </div>
-    <div class="flex flex-col">
-      <h3 class="text-accent text-lg md:text-lg lg:text-xl">
-        BILLING
-        <div
-          class="text-white text-xs md:text-sm lg:text-base mt-2 md:mt-4 lg:mt-6"
-        >
-          <p>talous[at]asteriski.fi</p>
-          <p>OKOYFIHH</p>
-          <p>Business ID: 3032318-5</p>
-        </div>
-      </h3>
+    <div class="flex flex-col align-center">
+      <h3 class="text-accent text-lg md:text-lg lg:text-xl">SOCIALS</h3>
+      <div class="self-center">
+        <SocialsLinks />
+      </div>
     </div>
   </div>
-  <p>&copy; {today.getFullYear()} All rights reserved.</p>
-  <div class="social-links flex justify-center gap-4 mt-4">
-    <SocialsLink />
-  </div>
+  <p class="mt-10 md:mt-15 lg:mt-20">
+    &copy; {today.getFullYear()} All rights reserved.
+  </p>
 </footer>

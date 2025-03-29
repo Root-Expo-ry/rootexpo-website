@@ -4,6 +4,10 @@ import { SITE_TITLE } from "../consts";
 const { class: className } = Astro.props;
 ---
 
-<h2 class:list={[className, "m-0 text-base"]}>
-  <a href="/" class="no-underline text-white hover:text-accent">{SITE_TITLE}</a>
-</h2>
+<div class="flex flex-row items-center justify-center mx-4 lg:mx-8 xl:mx-12">
+  <img
+    src="/logos/rootlogo_white.svg"
+    alt="Root"
+    class="w-24 md:w-32 lg:w-40 rounded-none"
+  />
+</div>
