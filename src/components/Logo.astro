@@ -4,10 +4,12 @@ import { SITE_TITLE } from "../consts";
 const { class: className } = Astro.props;
 ---
 
-<div class="flex flex-row items-center justify-center mx-4 lg:mx-8 xl:mx-12">
-  <img
-    src="/logos/rootlogo_white.svg"
-    alt="Root"
-    class="w-24 md:w-32 lg:w-40 rounded-none"
-  />
-</div>
+<a href="/">
+  <div class="flex flex-row items-center justify-center mx-4 lg:mx-8 xl:mx-12">
+    <img
+      src="/logos/rootlogo_white.svg"
+      alt="Root"
+      class="w-24 md:w-32 lg:w-40 rounded-none transition-transform duration-300 hover:scale-110"
+    />
+  </div>
+</a>

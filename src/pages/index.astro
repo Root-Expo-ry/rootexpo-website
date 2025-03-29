@@ -1,12 +1,47 @@
 ---
-
+import Body from "../components/Body.astro";
+import Content from "../components/Content.astro";
+import Hero from "../components/Hero.astro";
+import SubTitle from "../components/SubTitle.astro";
+import Title from "../components/Title.astro";
+import Layout from "../layouts/BaseLayout.astro";
+import Partners from "../components/Partners.tsx";
+import NumberCards from "../components/NumberCards.astro";
 ---
 
-<div class="min-h-screen bg-gray-900 flex flex-col items-center justify-center">
-  <h1 class="text-5xl text-white font-bold mb-8 animate-pulse font-jetbrains">
-    Coming Soon
-  </h1>
-  <p class="text-white text-lg mb-8">
-    We're working hard to bring you something amazing. Stay tuned!
-  </p>
-</div>
+<Layout
+  title="For Talent"
+  description="What value do we bring for the IT talent?"
+>
+  <Hero
+    title="FUELING THE NEXT GENERATION OF IT TALENT."
+    subtitle="We bring together the most exciting companies and talented IT people in the Turku region."
+    date="20.11.2025"
+  />
+  <Content>
+    <Title text="YOU DON'T NEED TO BE PERFECT — JUST CURIOUS." />
+    <Body
+      text=`Root will be held on 20 November 2025 at the Visitor & Innovation Centre Joki in Turku, Finland.
+      Everyone’s welcome — no sign-up needed!`
+    />
+    <Title text="NUMBERS" />
+    <NumberCards
+      cards={[
+        {
+          number: "4000+",
+          description: "Talent Reach",
+        },
+        {
+          number: "5+",
+          description: "Side Events",
+        },
+        {
+          number: "#1",
+          description: "IT Career Fair in Turku",
+        },
+      ]}
+    />
+    <!-- <Title text="SIDE EVENTS" />
+    <Body text=`Keynotes. Workshops. Afterwork.` /> -->
+  </Content>
+</Layout>
