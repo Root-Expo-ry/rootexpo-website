@@ -39,19 +39,31 @@ const partners: Partner[] = [
     }
 ];
 
+const ecosystem: Partner[] = [
+  {
+    name: "Turun Kaupunki",
+    homepageLink: new URL("https://www.turku.fi"),
+    logo: "https://circhubs.fi/wp-content/uploads/2020/05/turku_vaaka_300ppi_cyan.png"
+  }
+];
+
+
 export default function StaticPartnersPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       {/* Main Partner */}
-      <section className="mb-16 flex justify-center">
+      <h2 className="text-3xl font-bold mb-4 text-center">
+        Main Partner
+      </h2>
+      <section className="mb-10 flex justify-center">
         <a
           href={mainPartner.homepageLink.toString()}
           target="_blank"
           rel="noopener noreferrer"
           className="group"
         >
-          <div className="inline-flex items-center gap-6 p-8 bg-transparent transition-shadow duration-300 hover:shadow-2xl">
-            <span className="flex h-36 w-72 items-center justify-center p-3 ">
+          <div className="inline-flex items-center p-4 bg-transparent transition-shadow duration-300 hover:shadow-2xl">
+            <span className="flex h-36 w-72 items-center justify-center">
               <img
                 src={mainPartner.logo}
                 className="max-w-full max-h-full"
@@ -62,8 +74,11 @@ export default function StaticPartnersPage() {
       </section>
 
       {/* Grid of Other Partners */}
+      <h2 className="text-3xl font-bold mb-4 text-center">
+        Other Partners
+      </h2>
       <section>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
           {partners.map((partner) => (
             <a
               href={partner.homepageLink.toString()}
@@ -74,6 +89,29 @@ export default function StaticPartnersPage() {
                 <span className="flex h-24 w-48 items-center justify-center p-2">
                   <img
                     src={partner.logo}
+                    className="max-w-full max-h-full"
+                  />
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+      <h2 className="text-3xl font-bold mb-4 text-center">
+        Ecosystem
+      </h2>
+      <section>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {ecosystem.map((eco) => (
+            <a
+              href={eco.homepageLink.toString()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex flex-col items-center gap-4 p-4 bg-transparent hover:shadow-md transition-all duration-300">
+                <span className="flex h-24 w-48 items-center justify-center p-2">
+                  <img
+                    src={eco.logo}
                     className="max-w-full max-h-full"
                   />
                 </span>
