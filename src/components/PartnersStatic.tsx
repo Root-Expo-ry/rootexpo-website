@@ -47,7 +47,7 @@ export default function StaticPartnersPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       {/* Main Partner */}
-      <h2 className="text-3xl font-bold mb-4 text-center">
+      <h2 className="text-5xl font-bold mb-4 text-center text-accent">
         Main Partner
       </h2>
       <section className="mb-10 flex justify-center">
@@ -69,7 +69,7 @@ export default function StaticPartnersPage() {
       </section>
 
       {/* Grid of Other Partners */}
-      <h2 className="text-3xl font-bold mb-4 text-center">
+      <h2 className="text-4xl font-bold mb-4 text-center text-accent">
         Other Partners
       </h2>
       <section>
@@ -92,7 +92,7 @@ export default function StaticPartnersPage() {
           ))}
         </div>
       </section>
-      <h2 className="text-3xl font-bold mb-4 text-center">
+      <h2 className="text-3xl font-bold mb-4 text-center text-accent">
         Ecosystem
       </h2>
       <section>
