@@ -6,6 +6,7 @@ import Title from "../components/Title.astro";
 import Layout from "../layouts/BaseLayout.astro";
 import NumberCards from "../components/NumberCards.astro";
 import StaticPartnersPage from "../components/PartnersStatic";
+import EventCountdown from "../components/EventCountdown";
 ---
 
 <Layout
@@ -24,11 +25,13 @@ import StaticPartnersPage from "../components/PartnersStatic";
     "CV Workshop",
   ]}
 >
+
   <Hero
     title="FUELING THE NEXT GENERATION OF IT TALENT."
     subtitle="ROOT EXPO AIMS TO BE THE BEST IT CAREER FAIR IN FINLAND. JOIN US ON NOV 20, 2025 AT VISITOR CENTER JOKI IN TURKU TO CONNECT, EXPLORE, AND GROW."
     date=""
   />
+  <EventCountdown client:load />
   <Content>
     <Title text="YOU DON'T NEED TO BE PERFECT — JUST CURIOUS." />
     <Body
