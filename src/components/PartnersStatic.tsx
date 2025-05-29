@@ -64,7 +64,7 @@ export default function StaticPartnersPage() {
     <div className="container mx-auto px-4 py-12">
       {/* Main Partner */}
       <h5 className="text-center">
-        Main Partner
+        MAIN PARTNER
       </h5>
       <section className="mb-10 flex justify-center">
         <a
@@ -86,7 +86,7 @@ export default function StaticPartnersPage() {
 
       {/* Grid of Partners */}
       <h5 className="text-center">
-        Partners
+        PARTNERS
       </h5>
       <section>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
@@ -109,7 +109,7 @@ export default function StaticPartnersPage() {
         </div>
       </section>
       <h2 className="text-center">
-        Ecosystem
+        ECOSYSTEM
       </h2>
       <section>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
