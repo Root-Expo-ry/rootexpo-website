@@ -1,5 +1,6 @@
 ---
 import Body from "../components/Body.astro";
+import Contact from "../components/Contact.astro";
 import Content from "../components/Content.astro";
 import SubTitle from "../components/SubTitle.astro";
 import Title from "../components/Title.astro";
@@ -10,8 +11,8 @@ import Layout from "../layouts/BaseLayout.astro";
   title="Contact Root Expo Organizers"
   description="Project team and contact information for Root Expo."
   tags={[
-    "Root Turku",
     "Root Expo",
+    "Turku",
     "Contact Organizers",
     "Digit ry",
     "Asteriski ry",
@@ -19,28 +20,6 @@ import Layout from "../layouts/BaseLayout.astro";
 >
   <Content>
     <Title text="CONTACT US." />
-
-    <SubTitle text="Digit ry" />
-    <Body text={`Business ID: 2285810-4`} />
-    <Body text={`Project team: digit@utu.fi`} />
-
-    <SubTitle text="Asteriski ry" />
-    <Body text={`Business ID: 3032318-5`} />
-    <Body text={`Invoicing: hallitus@asteriski.fi`} />
-
-    <SubTitle text="Event Coordinator" />
-    <Body text={`Marius Ranta`} />
-    <Body text={`marius.v.ranta@utu.fi`} />
-    <Body text={`045 208 8191`} />
-
-    <SubTitle text="Head of Sales" />
-    <Body text={`Tom Pippuri`} />
-    <Body text={`tom.a.pippuri@utu.fi`} />
-    <Body text={`045 652 5556`} />
-
-    <SubTitle text="Sales Manager" />
-    <Body text={`Eero Pirkkalainen`} />
-    <Body text={`e.pirkkalainen@student.maastrichtuniversity.nl`} />
-    <Body text={`040 196 3005`} />
+    <Contact />
   </Content>
 </Layout>
