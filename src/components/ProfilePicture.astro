@@ -10,10 +10,12 @@ const {
   alt = "Contact Icon",
   size = 120,
 } = Astro.props;
+
+const finalImage = image?.trim() ? image : "/logos/rooticon_white.svg";
 ---
 
 <img
-  src={image}
+  src={finalImage}
   alt={alt}
   width={size}
   height={size}
