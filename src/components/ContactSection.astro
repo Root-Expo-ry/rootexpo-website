@@ -1,96 +1,33 @@
 ---
 import ContactCard from "./ContactCard.astro";
+import Title from "./Title.astro";
+import contacts from "../data/contacts.json";
+
+interface Props {
+  title?: string;
+  people: "projectLead" | "sales" | "tech";
+}
+
+const { title, people } = Astro.props;
+const contactList = contacts[people] ?? [];
 ---
 
+<Title text={title || ""} />
+<br />
 <div
   class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1280px] mx-auto px-6 mb-8"
 >
-  <ContactCard
-    name="Digit ry"
-    title="Project team"
-    email="digit@utu.fi"
-    phone=""
-    text="Business ID: 2285810-4"
-  />
-  <ContactCard
-    name="Asteriski ry"
-    title="Invoicing"
-    email="hallitus@asteriski.fi"
-    phone=""
-    text="Business ID: 3032318-5"
-  />
-  <ContactCard
-    name="Marius Ranta"
-    title="Event Coordinator"
-    email="mavran@utu.fi"
-    phone="045 208 8191"
-    text=""
-  />
-
-  <ContactCard
-    name="Tom Pippuri"
-    title="Head of Sales"
-    image="https://media.licdn.com/dms/image/v2/D4E03AQEXX3qWjBaYPQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718315105128?e=1756339200&v=beta&t=H15WiKOfu_iNiEzSeDMCgYxAJeHt6cpT4gikzneCUTs"
-    email="tom.a.pippuri@utu.fi"
-    phone="045 652 5556"
-    linkedin="https://www.linkedin.com/in/tom-pippuri/"
-    text=""
-  />
-  <ContactCard
-    name="Eero Pirkkalainen"
-    title="Sales Manager"
-    email="e.pirkkalainen@student.maastrichtuniversity.nl"
-    phone="040 196 3005"
-    text=""
-  />
-
-  <ContactCard
-    name="Eetu Salminen"
-    title="Partnerships"
-    email="eosalm@utu.fi"
-    phone="040 1616 002"
-    text=""
-  />
-
-  <ContactCard
-    name="Riku Lauttia"
-    title="Sales Manager"
-    email="rtlaut@utu.fi"
-    phone=""
-    text=""
-  />
-
-  <ContactCard
-    name="Janina Paasila"
-    title="Marketing, Brand & Design"
-    email=""
-    phone=""
-    text=""
-  />
-
-  <ContactCard
-    name="Onnimanni Hannonen"
-    title="Software Developer"
-    email=""
-    phone=""
-    text=""
-  />
-
-  <ContactCard
-    name="Jesse Lappalainen"
-    title="Software Developer"
-    email=""
-    image="https://media.licdn.com/dms/image/v2/D4D03AQFIMsfdYY--Vw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1685478627636?e=1756339200&v=beta&t=DJizKR9EgKhuEBT_lX6wAbg_tEpRSvHBu7RAtn_rXKM"
-    phone=""
-    linkedin="https://www.linkedin.com/in/jesse-lappalainen/"
-    text=""
-  />
-
-  <ContactCard
-    name="Juho Torkkeli"
-    title="Software Developer"
-    email=""
-    phone=""
-    text=""
-  />
+  {
+    contactList.map((contact) => (
+      <ContactCard
+        name={contact.name}
+        title={contact.title}
+        email={contact.email}
+        phone={contact.phone}
+        image={contact.image}
+        linkedin={contact.linkedin}
+        text={contact.text}
+      />
+    ))
+  }
 </div>

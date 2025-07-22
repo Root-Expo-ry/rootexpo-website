@@ -1,0 +1,107 @@
+{
+  "projectLead": [
+    {
+      "name": "Digit ry",
+      "title": "Project team",
+      "email": "digit@utu.fi",
+      "phone": "",
+      "linkedin": "",
+      "image": "",
+      "text": "Business ID: 2285810-4"
+    },
+    {
+      "name": "Asteriski ry",
+      "title": "Invoicing",
+      "email": "hallitus@asteriski.fi",
+      "phone": "",
+      "linkedin": "",
+      "image": "",
+      "text": "Business ID: 3032318-5"
+    },
+    {
+      "name": "Marius Ranta",
+      "title": "Event Coordinator",
+      "email": "mavran@utu.fi",
+      "phone": "045 208 8191",
+      "linkedin": "",
+      "image": "",
+      "text": ""
+    },
+    {
+      "name": "Janina Paasila",
+      "title": "Marketing, Brand & Design",
+      "email": "",
+      "phone": "",
+      "linkedin": "",
+      "image": "",
+      "text": ""
+    }
+  ],
+  "sales": [
+    {
+      "name": "Tom Pippuri",
+      "title": "Head of Sales",
+      "email": "tom.a.pippuri@utu.fi",
+      "phone": "045 652 5556",
+      "linkedin": "https://www.linkedin.com/in/tom-pippuri/",
+      "image": "https://media.licdn.com/dms/image/v2/D4E03AQEXX3qWjBaYPQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718315105128?e=1756339200&v=beta&t=H15WiKOfu_iNiEzSeDMCgYxAJeHt6cpT4gikzneCUTs",
+      "text": ""
+    },
+    {
+      "name": "Eero Pirkkalainen",
+      "title": "Sales Manager",
+      "email": "e.pirkkalainen@student.maastrichtuniversity.nl",
+      "phone": "040 196 3005",
+      "linkedin": "",
+      "image": "",
+      "text": ""
+    },
+    {
+      "name": "Eetu Salminen",
+      "title": "Partnerships",
+      "email": "eosalm@utu.fi",
+      "phone": "040 1616 002",
+      "linkedin": "",
+      "image": "",
+      "text": ""
+    },
+    {
+      "name": "Riku Lauttia",
+      "title": "Sales Manager",
+      "email": "rtlaut@utu.fi",
+      "phone": "",
+      "linkedin": "",
+      "image": "",
+      "text": ""
+    }
+  ],
+  "tech": [
+    {
+      "name": "Onnimanni Hannonen",
+      "title": "Software Developer",
+      "email": "",
+      "phone": "",
+      "linkedin": "",
+      "image": "",
+      "text": ""
+    },
+    {
+      "name": "Jesse Lappalainen",
+      "title": "Software Developer",
+      "email": "",
+      "phone": "",
+      "linkedin": "https://www.linkedin.com/in/jesse-lappalainen/",
+      "image": "https://media.licdn.com/dms/image/v2/D4D03AQFIMsfdYY--Vw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1685478627636?e=1756339200&v=beta&t=DJizKR9EgKhuEBT_lX6wAbg_tEpRSvHBu7RAtn_rXKM",
+      "text": ""
+    },
+    {
+      "name": "Juho Torkkeli",
+      "title": "Software Developer",
+      "email": "",
+      "phone": "",
+      "linkedin": "",
+      "image": "",
+      "text": ""
+    }
+  ]
+}
