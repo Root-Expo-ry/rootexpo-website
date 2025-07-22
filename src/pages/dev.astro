@@ -7,10 +7,11 @@ import PartnersLogoScroller from "../components/PartnersLogoScroller.tsx";
 import MatterportEmbed from "../components/MatterportEmbed.astro";
 import ScrollProgressBar from '../components/ScrollProgressBar';
 import ScrollToTopButton from '../components/ScrollToTopButton';
+import FaqSection from "../components/FaqSection.astro";
 ---
 
 <Layout title="Dev Page" tags={[]}>
-  <ScrollProgressBar client:visible />
+  <ScrollProgressBar client:load />
   <MatterportEmbed url="https://my.matterport.com/show/?m=13UZgtiVvEr" />
   <PartnersStatic />
   <Title text="No BG Scroller" />
@@ -23,5 +24,6 @@ import ScrollToTopButton from '../components/ScrollToTopButton';
   <Title text="Old scroller" />
   <PartnersScroller client:load />
   <PartnersScroller client:load scrollDirection="reverse" partnersGroup="1" />
-  <ScrollToTopButton client:visible />
+  <ScrollToTopButton client:load />
+  <FaqSection />
 </Layout>

@@ -23,8 +23,7 @@ export default function ScrollProgressBar() {
       width: `${scroll}%`,
       height: '4px',
       backgroundColor: '#D96CEC',
-      zIndex: 9999,
-      transition: 'width 0.1s ease-out'
+      zIndex: 9999
     }} />
   );
 }

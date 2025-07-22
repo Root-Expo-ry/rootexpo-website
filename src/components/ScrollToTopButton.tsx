@@ -23,29 +23,22 @@ export default function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      style={{
-        position: 'fixed',
-        bottom: '6rem',
-        right: '2rem',
-        width: '4rem',
-        height: '4rem',
-        fontSize: '1.2rem',
-        backgroundColor: '#202020',   // soft magenta
-        color: '#D96CEC',
-        border: '2px solid #D96CEC',
-        borderRadius: '50%',
-        cursor: 'pointer',
-        zIndex: 1000,
-        opacity: isVisible ? 1 : 0,
-        transition: 'opacity 0.3s ease, transform 0.2s ease',
-        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)',
-      }}
       aria-label="Scroll to top"
+      className={`
+        fixed bottom-24 right-8 w-16 h-16 text-[1.2rem]
+        bg-background text-white border-2 border-white rounded-full
+        cursor-pointer z-[1000]
+        transition-opacity duration-300 ease-in-out
+        hover:border-accent hover:text-accent
+        ${isVisible ? 'opacity-100' : 'opacity-0'}
+    `}
     >
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 1 }}>
-        <span style={{ fontSize: '1rem' }}>↑</span>
-        <span style={{ fontSize: '1rem', marginTop: '2px' }}>Top</span>
+      <div className="flex flex-col items-center leading-none">
+        <span className="text-[1rem] mt-2">▲</span>
+        <h3 className="text-[1rem] mt-1.5">Top</h3>
       </div>
     </button>
   );
 }
+
+// ▲ ↑ ⬆
