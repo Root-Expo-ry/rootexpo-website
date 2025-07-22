@@ -1,22 +1,29 @@
 ---
 import { Icon } from "astro-icon/components";
+import ProfilePicture from "./ProfilePicture.astro";
 
 interface Props {
   name: string;
   title: string;
+  image?: string;
   email?: string;
   phone?: string;
   linkedin?: string;
   text?: string;
 }
-const { name, title, email, phone, linkedin, text } = Astro.props;
+const { name, title, image, email, phone, linkedin, text } = Astro.props;
 ---
 
-<div class="bg-container w-full h-full p-6 rounded-lg">
-  <h2 class="">
-    {name}
-  </h2>
-  <h5 class="text-accent">
+<div
+  class="bg-container w-full h-full p-6 rounded-lg"
+  style="background: linear-gradient(to top left, var(--accent) 0%, var(--container) 25%);"
+>
+  <div class="flex items-center mb-4">
+    <ProfilePicture image={image} alt={`${name} profile picture`} size={120} />
+    <h2 class="">{name}</h2>
+  </div>
+
+  <h5 class="text-accent text-2xl">
     {title}
   </h5>
 
