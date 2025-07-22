@@ -1,0 +1,36 @@
+---
+import ContactCard from "./ContactCard.astro";
+import Title from "./Title.astro";
+import contacts from "../data/contacts.json";
+
+interface Props {
+  title?: string;
+  people: Array<string>;
+}
+
+const { title, people } = Astro.props;
+const allContacts = Object.values(contacts).flat();
+const contactList = allContacts.filter((contact) =>
+  people.includes(contact.name)
+);
+---
+
+<Title text={title || ""} />
+<br />
+<div
+  class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1280px] mx-auto px-6 mb-8"
+>
+  {
+    contactList.map((contact) => (
+      <ContactCard
+        name={contact.name}
+        title={contact.title}
+        email={contact.email}
+        phone={contact.phone}
+        image={contact.image}
+        linkedin={contact.linkedin}
+        text={contact.text}
+      />
+    ))
+  }
+</div>
