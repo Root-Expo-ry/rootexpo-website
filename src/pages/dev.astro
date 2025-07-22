@@ -5,9 +5,12 @@ import PartnersStatic from "../components/PartnersStatic.tsx";
 import PartnersScroller from "../components/PartnersScroller.tsx";
 import PartnersLogoScroller from "../components/PartnersLogoScroller.tsx";
 import MatterportEmbed from "../components/MatterportEmbed.astro";
+import ScrollProgressBar from '../components/ScrollProgressBar';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 ---
 
 <Layout title="Dev Page" tags={[]}>
+  <ScrollProgressBar client:visible />
   <MatterportEmbed url="https://my.matterport.com/show/?m=13UZgtiVvEr" />
   <PartnersStatic />
   <Title text="No BG Scroller" />
@@ -20,4 +23,5 @@ import MatterportEmbed from "../components/MatterportEmbed.astro";
   <Title text="Old scroller" />
   <PartnersScroller client:load />
   <PartnersScroller client:load scrollDirection="reverse" partnersGroup="1" />
+  <ScrollToTopButton client:visible />
 </Layout>
