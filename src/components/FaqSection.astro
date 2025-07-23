@@ -1,0 +1,40 @@
+---
+import FaqBox from './FaqBox.tsx';
+---
+
+<section class="faq-section">
+  <h2>Frequently Asked Questions (FAQ)</h2>
+
+  <FaqBox question="Q1: What is Root Expo?" client:load>
+    <p>Root Expo is the best IT career fair in Turku.</p>
+  </FaqBox>
+
+  <FaqBox question="Q2: What can I expect from Root Expo?" client:load>
+    <p>At this awesome event, you can expect:</p>
+    <ul class="list-disc list-inside mt-2">
+      <li class="ml-6">World-class speakers.</li>
+      <li class="ml-6">Hands-on workshops.</li>
+      <li class="ml-6">Exclusive afterwork party.</li>
+    </ul>
+  </FaqBox>
+
+  <FaqBox question="Q3: When is Root Expo?" client:load>
+    <p>November 20th.</p>
+  </FaqBox>
+</section>
+
+
+
+
+<style>
+  .faq-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .faq-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+</style>
