@@ -1,5 +1,4 @@
 import React from "react";
-import SubTitle from "./SubTitle.astro";
 
 export interface Partner {
   name: string;
@@ -22,6 +21,11 @@ const partners: Partner[] = [
         name: "Visma",
         homepageLink: new URL("https://www.visma.fi"),
         logo: "/partnerLogos/visma_white.png",
+    },
+    {
+      name: "Kongsberg",
+      homepageLink: new URL("https://www.kongsberg.com"),
+      logo: "/partnerLogos/kongsberg_white.png",
     },
     {
       name: "CGI",
