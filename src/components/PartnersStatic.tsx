@@ -23,6 +23,16 @@ const partners: Partner[] = [
         homepageLink: new URL("https://www.visma.fi"),
         logo: "/partnerLogos/visma_white.png",
     },
+    {
+      name: "CGI",
+      homepageLink: new URL("https://www.cgi.com/fi/fi"),
+      logo: "/partnerLogos/cgi_white.png",
+    },
+    {
+      name: "Terveystalo",
+      homepageLink: new URL("https://www.terveystalo.com"),
+      logo: "/partnerLogos/terveystalo_white.svg",
+    }
 ];
 
 const ecosystem: Partner[] = [
