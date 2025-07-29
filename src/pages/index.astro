@@ -9,6 +9,7 @@ import StaticPartnersPage from "../components/PartnersStatic";
 import MatterportEmbed from "../components/MatterportEmbed.astro";
 import Section from "../components/Section.astro";
 import Image from "../components/Image.astro";
+import CustomContactSection from "../components/CustomContactSection.astro";
 ---
 
 <Layout
@@ -27,61 +28,69 @@ import Image from "../components/Image.astro";
     "CV Workshop",
   ]}
 >
-
   <Hero />
-  
+  <Section />
+
   <Content>
     <Section>
-    <Title text="WHAT MAKES US DIFFERENT." />
-    <NumberCards
-      cards={[
-        {
-          number: "4000+",
-          description: "Talent reach in our network.",
-        },
-        {
-          number: "5+",
-          description: "Side events.",
-        },
-        {
-          number: "#1",
-          description: "IT career fair in Turku.",
-        },
-        {
-          number: "100 %",
-          description: "Focus on IT.",
-        },
-      ]}
-    />
+      <Title text="WHAT MAKES US DIFFERENT." />
+      <NumberCards
+        cards={[
+          {
+            number: "4000+",
+            description: "Talent reach in our network.",
+          },
+          {
+            number: "5+",
+            description: "Side events.",
+          },
+          {
+            number: "#1",
+            description: "IT career fair in Turku.",
+          },
+          {
+            number: "100 %",
+            description: "Focus on IT.",
+          },
+        ]}
+      />
+    </Section>
+
+    <Section>
+      <CustomContactSection
+        title="Interested in becoming a partner? Contact us!"
+        people={["Tom Pippuri", "Eero Pirkkalainen"]}
+      />
     </Section>
 
     <Section>
       <Title text="YOU DON'T NEED TO BE PERFECT — JUST CURIOUS." />
-      <Body text="Root Expo brings together the most exciting companies and talented IT people in the Turku region. Join us for inspiring speakers, interactive workshops, and engaging and innovative networking. This is an adventure where everyone's welcome—no sign-up needed!" />
-<!--      <Image src="public/images/joki54.png" alt="Visitor Center Joki"></Image> -->
-    </Section>
-    
-    <Section>
-    <Title text="JOB DATING." />
-    <Body text="You'll leave with more than you came for." />
+      <Body
+        text="Root Expo brings together the most exciting companies and talented IT people in the Turku region. Join us for inspiring speakers, interactive workshops, and engaging and innovative networking. This is an adventure where everyone's welcome—no sign-up needed!"
+      />
+      <!--      <Image src="public/images/joki54.png" alt="Visitor Center Joki"></Image> -->
     </Section>
 
     <Section>
-    <Title text="MUST-SEE MOMENTS." /> 
-    <Body text="World-class speakers. Hands-on workshops. Exclusive afterwork party. Stay tuned!" />
-    </Section>
-
-
-
-    <Section>
-    <Title text="ALREADY IN MOTION." />
-    <StaticPartnersPage />
+      <Title text="JOB DATING." />
+      <Body text="You'll leave with more than you came for." />
     </Section>
 
     <Section>
-    <Title text="3D Venue Experience." />
-    <MatterportEmbed url="https://my.matterport.com/show/?m=13UZgtiVvEr" />
+      <Title text="MUST-SEE MOMENTS." />
+      <Body
+        text="World-class speakers. Hands-on workshops. Exclusive afterwork party. Stay tuned!"
+      />
+    </Section>
+
+    <Section>
+      <Title text="ALREADY IN MOTION." />
+      <StaticPartnersPage />
+    </Section>
+
+    <Section>
+      <Title text="3D Venue Experience." />
+      <MatterportEmbed url="https://my.matterport.com/show/?m=13UZgtiVvEr" />
     </Section>
   </Content>
-  
 </Layout>

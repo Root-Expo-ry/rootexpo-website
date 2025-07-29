@@ -1,0 +1,24 @@
+---
+interface Props {
+  image?: string;
+  alt?: string;
+  size?: number;
+}
+
+const {
+  image = "/logos/rooticon_white.svg",
+  alt = "Contact Icon",
+  size = 120,
+} = Astro.props;
+
+const finalImage = image?.trim() ? image : "/logos/rooticon_white.svg";
+---
+
+<img
+  src={finalImage}
+  alt={alt}
+  width={size}
+  height={size}
+  class="rounded-full object-contain"
+  style={`width: ${size}px; height: ${size}px;`}
+/>

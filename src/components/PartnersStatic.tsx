@@ -1,5 +1,4 @@
 import React from "react";
-import SubTitle from "./SubTitle.astro";
 
 export interface Partner {
   name: string;
@@ -23,6 +22,21 @@ const partners: Partner[] = [
         homepageLink: new URL("https://www.visma.fi"),
         logo: "/partnerLogos/visma_white.png",
     },
+    {
+      name: "Kongsberg",
+      homepageLink: new URL("https://www.kongsberg.com"),
+      logo: "/partnerLogos/kongsberg_white.png",
+    },
+    {
+      name: "CGI",
+      homepageLink: new URL("https://www.cgi.com/fi/fi"),
+      logo: "/partnerLogos/cgi_white.png",
+    },
+    {
+      name: "Terveystalo",
+      homepageLink: new URL("https://www.terveystalo.com"),
+      logo: "/partnerLogos/terveystalo_white.svg",
+    }
 ];
 
 const ecosystem: Partner[] = [

@@ -1,24 +1,80 @@
 ---
+import { Icon } from "astro-icon/components";
+import ProfilePicture from "./ProfilePicture.astro";
+
 interface Props {
   name: string;
   title: string;
-  email: string;
-  phone: string;
-  text: string;
+  image?: string;
+  email?: string;
+  phone?: string;
+  linkedin?: string;
+  text?: string;
 }
-const { name, title, email, phone, text } = Astro.props;
+const { name, title, image, email, phone, linkedin, text } = Astro.props;
 ---
 
-<div class="bg-container w-full h-full p-6 rounded-lg">
-    <h2 class="">
-      {name}
-    </h2>
-    <h5 class="text-accent">
-      {title}
-    </h5>
-    <p class="break-words">
-      {email}<br />
-      {phone && <>{phone}<br /></>}
-      {text}
-    </p>
+<div
+  class="bg-container w-full h-full p-6 rounded-lg shadow-contact-card"
+  style="background: linear-gradient(to top left, var(--accent) 0%, var(--container) 25%);"
+>
+  <div class="flex items-center mb-4">
+    <ProfilePicture image={image} alt={`${name} profile picture`} size={120} />
+    <h2 class="">{name}</h2>
+  </div>
+
+  <h5 class="text-accent text-2xl">
+    {title}
+  </h5>
+
+  <div class="space-y-2 break-words break-all">
+    {
+      email && (
+        <div class="flex items-center gap-2 ml-6">
+          <Icon name="mdi:email" class="text-accent" width="20" height="20" />
+          <a href={`mailto:${email}`} class="text-white">
+            {email}
+          </a>
+        </div>
+      )
+    }
+
+    {
+      phone && (
+        <div class="flex items-center gap-2 ml-6">
+          <Icon name="mdi:phone" class="text-accent" width="20" height="20" />
+          <span>{phone}</span>
+        </div>
+      )
+    }
+
+    {
+      linkedin && (
+        <div class="flex items-center gap-2 ml-6">
+          <Icon
+            name="mdi:linkedin"
+            class="text-accent"
+            width="20"
+            height="20"
+          />
+          <a
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white"
+          >
+            {name}
+          </a>
+        </div>
+      )
+    }
+
+    {
+      text && (
+        <div class="flex items-start gap-2">
+          <p>{text}</p>
+        </div>
+      )
+    }
+  </div>
 </div>

@@ -3,7 +3,6 @@ import Content from "../components/Content.astro";
 import Title from "../components/Title.astro";
 import Layout from "../layouts/BaseLayout.astro";
 import ContactSection from "../components/ContactSection.astro";
-import Section from "../components/Section.astro";
 ---
 
 <Layout
@@ -18,10 +17,18 @@ import Section from "../components/Section.astro";
   ]}
 >
   <Content>
-    <Section>
-      <Title text="CONTACT US." />
-      <ContactSection />
-    </Section>
-
+    <Title
+      text=" Contact our amazing team"
+      class="text-5xl font-bold py-20 text-center text-accent"
+    />
+    <ContactSection title="Invoice & Project Lead." people="projectLead" />
+    <br />
+    <br />
+    <ContactSection title="Sales." people="sales" />
+    <br />
+    <br />
+    <ContactSection title="IT." people="tech" />
+    <br />
+    <br />
   </Content>
 </Layout>

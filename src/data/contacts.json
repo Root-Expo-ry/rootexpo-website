@@ -1,0 +1,107 @@
+{
+    "projectLead": [
+        {
+            "name": "Digit ry",
+            "title": "Project team",
+            "email": "digit@utu.fi",
+            "phone": "",
+            "linkedin": "",
+            "image": "/images/profile/digit_logo.svg",
+            "text": "Business ID: 2285810-4"
+        },
+        {
+            "name": "Asteriski ry",
+            "title": "Invoicing",
+            "email": "hallitus@asteriski.fi",
+            "phone": "",
+            "linkedin": "",
+            "image": "/partnerLogos/Asteriski.png",
+            "text": "Business ID: 3032318-5"
+        },
+        {
+            "name": "Marius Ranta",
+            "title": "Event Coordinator",
+            "email": "marius.ranta@rootexpo.fi",
+            "phone": "045 208 8191",
+            "linkedin": "https://www.linkedin.com/in/marius-ranta/",
+            "image": "/images/profile/marius_ranta.jpg",
+            "text": ""
+        },
+        {
+            "name": "Janina Paasila",
+            "title": "Marketing, Brand & Design",
+            "email": "janina.paasila@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/janinapaasila/",
+            "image": "/images/profile/janina_paasila.jpg",
+            "text": ""
+        }
+    ],
+    "sales": [
+        {
+            "name": "Tom Pippuri",
+            "title": "Head of Sales",
+            "email": "tom.pippuri@rootexpo.fi",
+            "phone": "045 652 5556",
+            "linkedin": "https://www.linkedin.com/in/tom-pippuri/",
+            "image": "/images/profile/tom_pippuri.jpg",
+            "text": ""
+        },
+        {
+            "name": "Eero Pirkkalainen",
+            "title": "Sales Manager",
+            "email": "eero.pirkkalainen@rootexpo.fi",
+            "phone": "040 196 3005",
+            "linkedin": "https://www.linkedin.com/in/eero-pirkkalainen-a205b0264/",
+            "image": "/images/profile/eero_pirkkalainen.jpg",
+            "text": ""
+        },
+        {
+            "name": "Eetu Salminen",
+            "title": "Partnerships",
+            "email": "eetu.salminen@rootexpo.fi",
+            "phone": "040 1616 002",
+            "linkedin": "https://www.linkedin.com/in/eetusalminen22333/",
+            "image": "/images/profile/eetu_salminen.jpg",
+            "text": ""
+        },
+        {
+            "name": "Riku Lauttia",
+            "title": "Sales Manager",
+            "email": "riku.lauttia@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/rikulauttia/",
+            "image": "/images/profile/riku_lauttia.jpg",
+            "text": ""
+        }
+    ],
+    "tech": [
+        {
+            "name": "Onnimanni Hannonen",
+            "title": "Software Developer",
+            "email": "onnimanni.hannonen@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/o-hannonen/",
+            "image": "/images/profile/onnimanni_hannonen.jpg",
+            "text": ""
+        },
+        {
+            "name": "Jesse Lappalainen",
+            "title": "Software Developer",
+            "email": "jesse.lappalainen@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/jesse-lappalainen/",
+            "image": "/images/profile/jesse_lappalainen.jpg",
+            "text": ""
+        },
+        {
+            "name": "Juho Torkkeli",
+            "title": "Software Developer",
+            "email": "juho.torkkeli@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/juho-torkkeli/",
+            "image": "/images/profile/juho_torkkeli.jpg",
+            "text": ""
+        }
+    ]
+}

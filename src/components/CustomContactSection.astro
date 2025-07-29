@@ -5,11 +5,14 @@ import contacts from "../data/contacts.json";
 
 interface Props {
   title?: string;
-  people: "projectLead" | "sales" | "tech";
+  people: Array<string>;
 }
 
 const { title, people } = Astro.props;
-const contactList = contacts[people] ?? [];
+const allContacts = Object.values(contacts).flat();
+const contactList = allContacts.filter((contact) =>
+  people.includes(contact.name)
+);
 ---
 
 <Title text={title || ""} />
