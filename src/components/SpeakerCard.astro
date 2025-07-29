@@ -8,6 +8,7 @@ interface Props {
 const { image, name, title, text } = Astro.props;
 ---
 
+
 <div class="speaker-card relative bg-container rounded-lg overflow-hidden w-[300px] md:w-auto lg:w-auto flex-shrink-0">
   <div class="relative w-full">
     <img 
@@ -33,6 +34,7 @@ const { image, name, title, text } = Astro.props;
     filter: grayscale(100%);
     transition: filter 0.3s ease, transform 0.3s ease;
   }
+
 </style>
 
   <!.speaker-card:hover img {filter: grayscale(0%);}>
