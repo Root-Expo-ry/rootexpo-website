@@ -1,31 +1,55 @@
 ---
 import SpeakerCard from './SpeakerCard.astro';
+import Title from "../components/Title.astro";
 ---
 
-<div class="flex overflow-x-auto space-x-4 snap-x snap-mandatory sm:grid sm:grid-cols-3 lg:grid lg:grid-cols-3 gap-8 max-w-[1280px] mx-auto px-6 mb-8">
+<section class="speaker-section">
+  <Title
+      text=" Our amazing speakers"
+      class="text-5xl font-bold py-20 text-center text-accent"
+  />
+  <section class="overflow-hidden px-6">
+    <div class="flex overflow-x-auto space-x-4 snap-x snap-mandatory md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 gap-8 max-w-[1280px] mx-auto px-6 mb-8">
 
-    <SpeakerCard
-      image="/speakers/randomdude.jpg"
-      name="A random guy"
-      title="Tech Startup, Chief Executive Officer"
-      text=""
-    />
+      <SpeakerCard
+        image="/speakers/randomdude.jpg"
+        name="A random guy"
+        title="Tech Startup, Chief Executive Officer"
+        text=""
+        class="snap-start"
+      />
 
-    <SpeakerCard
-      image="/speakers/randomdude2.jpg"
-      name="Testi"
-      title="Joku, Toimari"
-      text=""
-    />
+      <SpeakerCard
+        image="/speakers/randomdude2.jpg"
+        name="Testi"
+        title="Joku, Toimari"
+        text=""
+        class="snap-start"
+      />
 
-    <SpeakerCard
-      image="/speakers/randomdude3.jpg"
-      name="Petteri"
-      title="Rootexpo, Chief Technical Officer"
-      text=""
-    />
+      <SpeakerCard
+        image="/speakers/randomdude3.jpg"
+        name="Petteri"
+        title="Rootexpo, Chief Technical Officer"
+        text=""
+        class="snap-start"
+      />
 
-</div>
+    </div>
+  </section>
+</section>
+
+<style>
+  .speaker-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .speaker-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font: montserrat;
+  }
+</style>
 
 
 <! grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 max-w-[1280px] mx-auto px-6 mb-8>
