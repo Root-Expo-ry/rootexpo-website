@@ -1,0 +1,38 @@
+---
+interface Props {
+  image: string;
+  name: string;
+  title: string;
+  text: string;
+}
+const { image, name, title, text } = Astro.props;
+---
+
+<div class="speaker-card bg-container rounded-lg overflow-hidden w-[250px] sm:w-auto lg:w-auto flex-shrink-0">
+
+  <div className="w-full h-full">
+      <img 
+        src={image} 
+        alt={name} 
+        class="w-[250px] h-[250px] sm:w-[390px] sm:h-[390px] lg:w-[390px] lg:h-[390px] display object-cover rounded-lg mx-auto mb-4 shadow-md scale-100"
+      />
+  </div>
+  <div class="p-6 -mt-2">
+    <h2>
+      {name}
+    </h2>
+    <h5 class="text-accent">
+      {title}
+    </h5>
+  </div>
+</div>
+
+<style>
+  .speaker-card img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+  .speaker-card:hover img {
+    filter: grayscale(0%);
+  }
+</style>

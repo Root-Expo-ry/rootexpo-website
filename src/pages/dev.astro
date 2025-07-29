@@ -8,6 +8,7 @@ import MatterportEmbed from "../components/MatterportEmbed.astro";
 import ScrollProgressBar from '../components/ScrollProgressBar';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import FaqSection from "../components/FaqSection.astro";
+import SpeakerSection from "../components/SpeakerSection.astro";
 ---
 
 <Layout title="Dev Page" tags={[]}>
@@ -26,4 +27,5 @@ import FaqSection from "../components/FaqSection.astro";
   <PartnersScroller client:load scrollDirection="reverse" partnersGroup="1" />
   <ScrollToTopButton client:load />
   <FaqSection />
+  <SpeakerSection />
 </Layout>
