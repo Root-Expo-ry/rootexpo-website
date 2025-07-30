@@ -73,6 +73,15 @@
             "linkedin": "https://www.linkedin.com/in/rikulauttia/",
             "image": "/images/profile/riku_lauttia.jpg",
             "text": ""
+        },
+        {
+            "name": "Oskari Arvo",
+            "title": "Sponsorships & Web Development",
+            "email": "oskari.arvo@rootexpo.fi",
+            "phone": "045 880 5996",
+            "linkedin": "https://www.linkedin.com/in/oskari-arvo-a1ba0a205/",
+            "image": "/images/profile/oskari_arvo.jpg",
+            "text": ""
         }
     ],
     "tech": [

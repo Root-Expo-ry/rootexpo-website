@@ -8,17 +8,13 @@ interface Props {
 const { image, name, title, text } = Astro.props;
 ---
 
-<div class="speaker-card relative bg-container rounded-lg overflow-hidden w-[300px] md:w-auto lg:w-auto flex-shrink-0">
-  <div class="relative w-full">
-    <img 
-      src={image} 
-      alt={name} 
-      class="w-[300px] h-[300px] md:w-[390px] md:h-[390px] lg:w-[390px] lg:h-[390px] display object-cover rounded-lg mx-auto mb-4 shadow-md scale-100"
-    />
-
-    <div class="absolute bottom-0 inset-x-0 w-full h-[5px] bg-accent z-20 my-50"></div>
-  </div>
-  <div class="p-6 -mt-3">
+<div class={`speaker-card relative bg-container rounded-lg overflow-hidden w-[300px] md:w-auto lg:w-auto flex-shrink-0 ${Astro.props.class}`}>
+  <img 
+    src={image} 
+    alt={name} 
+    class="w-[300px] h-[300px] md:w-[390px] md:h-[390px] lg:w-[390px] lg:h-[390px] display object-cover mx-auto mb-4 shadow-md scale-100"
+  />
+  <div class="p-10 -mt-3">
     <h2>
       {name}
     </h2>
@@ -36,3 +32,4 @@ const { image, name, title, text } = Astro.props;
 </style>
 
   <!.speaker-card:hover img {filter: grayscale(0%);}>
+  <!"speaker-card relative bg-container rounded-lg overflow-hidden w-[300px] md:w-auto lg:w-auto flex-shrink-0">

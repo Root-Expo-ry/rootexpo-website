@@ -1,0 +1,87 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  image?: string;
+  name: string;
+  title: string;
+  email?: string;
+  phone?: string;
+  linkedin?: string;
+  text?: string;
+}
+const { image, name, title, email, phone, linkedin, text } = Astro.props;
+---
+
+<div class={`speaker-card relative bg-container rounded-lg overflow-hidden w-[300px] md:w-auto lg:w-auto flex-shrink-0 ${Astro.props.class}`}>
+  <img 
+    src={image} 
+    alt={name} 
+    class="w-[300px] h-[300px] md:w-[390px] md:h-[390px] lg:w-[390px] lg:h-[390px] display object-cover mx-auto mb-4 shadow-md scale-100"
+  />
+  <div class="p-10 -mt-3">
+    <h2>
+      {name}
+    </h2>
+    <h5 class="text-accent">
+      {title}
+    </h5>
+    <div class="space-y-2 break-words break-all">
+    {
+      email && (
+        <div class="flex items-center gap-2 ml-6">
+          <Icon name="mdi:email" class="text-accent" width="20" height="20" />
+          <a href={`mailto:${email}`} class="text-white">
+            {email}
+          </a>
+        </div>
+      )
+    }
+
+    {
+      phone && (
+        <div class="flex items-center gap-2 ml-6">
+          <Icon name="mdi:phone" class="text-accent" width="20" height="20" />
+          <span>{phone}</span>
+        </div>
+      )
+    }
+
+    {
+      linkedin && (
+        <div class="flex items-center gap-2 ml-6">
+          <Icon
+            name="mdi:linkedin"
+            class="text-accent"
+            width="20"
+            height="20"
+          />
+          <a
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white"
+          >
+            {name}
+          </a>
+        </div>
+      )
+    }
+
+    {
+      text && (
+        <div class="flex items-start gap-2">
+          <p>{text}</p>
+        </div>
+      )
+    }
+    </div>
+  </div>
+</div>
+
+<style>
+  .speaker-card img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+</style>
