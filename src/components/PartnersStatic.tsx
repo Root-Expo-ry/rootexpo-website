@@ -80,7 +80,7 @@ export default function StaticPartnersPage() {
       <h5 className="text-center text-accent">
         MAIN PARTNER:
       </h5>
-      <section className="mb-10 justify-center bg-container rounded-lg py-4 px-4">
+      <section className="mb-10 justify-center bg-container rounded-lg py-4 px-4 shadow-root-card">
         <a
           href={mainPartner.homepageLink.toString()}
           target="_blank"
@@ -103,7 +103,7 @@ export default function StaticPartnersPage() {
         PARTNERS:
       </h5>
       <section>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mb-8 bg-container rounded-lg py-4 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mb-8 bg-container rounded-lg py-4 px-4 shadow-root-card">
           {partners.map((partner) => (
             <a
               href={partner.homepageLink.toString()}
@@ -129,7 +129,7 @@ export default function StaticPartnersPage() {
         ECOSYSTEM:
       </h5>
       <section>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 bg-container rounded-lg py-4 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 bg-container rounded-lg py-4 px-4 shadow-root-card">
           {ecosystem.map((eco) => (
             <a
               href={eco.homepageLink.toString()}

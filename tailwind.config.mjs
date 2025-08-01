@@ -10,7 +10,7 @@ export default {
       },
 
       boxShadow: {
-        "contact-card": "10px 10px 18px -3px rgba(var(--accent-rgb), 0.2)",
+        "root-card": "10px 10px 18px -3px rgba(var(--accent-rgb), 0.2)",
       },
     },
   },
