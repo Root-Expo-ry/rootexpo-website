@@ -1,0 +1,31 @@
+---
+import Content from "../components/Content.astro";
+import Title from "../components/Title.astro";
+import Layout from "../layouts/BaseLayout.astro";
+import CardTemplate from "../components/CardTemplate.tsx";
+import CardTemplate2 from "../components/CardTemplate2.astro";
+---
+
+<Layout
+    title="Speakers At Root Expo"
+    description="Speakers and their topics at Root Expo."
+    tags={["Root Expo", "Turku", "Spekaers"]}
+>
+    <Content>
+        <Title
+            text="Speakers"
+            class="text-5xl font-bold py-20 text-center text-accent"
+        />
+
+        <CardTemplate2
+            name="Speaker Name"
+            title="Talk Title"
+            image="/images/profile/marius_ranta.jpg"
+            email="test@rootexpo.fi"
+            linkedin="https://linkedin.com"
+            phone="+123456789"
+            text="This is a sample text for the speaker's talk description."
+        />
+        <br />
+    </Content>
+</Layout>
