@@ -253,3 +253,8 @@ body, p {
 h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
+
+/* --- Gradient BG --- */
+.bg-gradient {
+	background: linear-gradient(to top left, var(--accent) 0%, var(--container) 25%);
+}
