@@ -2,18 +2,16 @@
 interface Props {
   image?: string;
   alt?: string;
+  className?: string;
 }
 
 const {
   image = "/logos/rooticon_white.svg",
   alt = "Contact Icon",
+  className = "",
 } = Astro.props;
 
 const finalImage = image?.trim() ? image : "/logos/rooticon_white.svg";
 ---
 
-<img
-  src={finalImage}
-  alt={alt}
-  class="w-full h-full object-cover"
-/>
+<img src={finalImage} class={`w-full h-full object-cover ${className}`} />
