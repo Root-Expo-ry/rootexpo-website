@@ -1,0 +1,27 @@
+---
+import FaqBox from './FaqBox.tsx';
+---
+
+<section class="container mx-auto px-6 faq-section">
+  <br />
+  <FaqBox question="Why should I join Root Expo as a company?" client:load>
+    <p>By joining this event, you can:</p>
+    <ul class="list-disc list-inside mt-2">
+      <li class="ml-6">Meet qualified candidates.</li>
+      <li class="ml-6">Promote your brand.</li>
+      <li class="ml-6">Fill open positions efficiently</li>
+    </ul>
+  </FaqBox>
+
+  <FaqBox question="How does Root Expo differ from other career fairs?" client:load>
+    <p>It focuses on short, targeted meetings instead of open booths.</p>
+  </FaqBox>
+
+  <FaqBox question="My company isn’t recruiting in Turku. Why should we still join?" client:load>
+    <p>Many of the attendees are willing to locate elsewhere in search of an IT job.</p>
+  </FaqBox>
+
+  <FaqBox question="Whom is re targeted to?" client:load>
+    <p>Both employers seeking talent and individuals looking for career opportunities.</p>
+  </FaqBox>
+</section>
