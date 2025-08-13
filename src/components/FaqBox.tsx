@@ -16,8 +16,8 @@ export default function FaqBox({ question, children }: Props) {
   return (
     <div
       onClick={() => setIsOpen(!isOpen)}
-      className="mb-4 cursor-pointer rounded-md border border-background bg-container p-4 shadow-sm 
-                 transition-all duration-50 active:scale-[0.98] hover:border-accent"
+      className="w-full mb-8 cursor-pointer rounded-md border border-background bg-container p-4 
+                 transition-all duration-50 active:scale-[0.98] hover:border-accent shadow-root-card"
     >
       <div className="flex justify-between items-center text-white">
         <h3 className='font-semibold text-lg mt-2 -ml-0.5 pl-3'>{question}</h3>
