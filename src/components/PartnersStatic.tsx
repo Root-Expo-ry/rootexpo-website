@@ -63,6 +63,11 @@ const partners: Partner[] = [
     homepageLink: new URL("https://www.tek.fi"),
     logo: "/partnerLogos/TEK_logo.png",
   },
+  {
+    name: "Twoday",
+    homepageLink: new URL("https://www.twoday.fi"),
+    logo: "/partnerLogos/twoday.png",
+  }
 ];
 
 const ecosystem: Partner[] = [
