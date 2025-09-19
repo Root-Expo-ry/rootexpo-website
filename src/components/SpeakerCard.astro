@@ -1,36 +1,41 @@
 ---
+import { Icon } from "astro-icon/components";
+import ProfilePicture from "./ProfilePicture.astro";
+
 interface Props {
-  image: string;
   name: string;
   title: string;
-  text: string;
+  image?: string;
+  company?: string;
 }
-const { image, name, title, text } = Astro.props;
+const { name, title, image, company } = Astro.props;
 ---
 
-<div class={`speaker-card relative bg-container rounded-lg overflow-hidden w-[300px] md:w-auto lg:w-auto flex-shrink-0 ${Astro.props.class}`}>
-  <img 
-    src={image} 
-    alt={name} 
-    class="w-[300px] h-[300px] md:w-[390px] md:h-[390px] lg:w-[390px] lg:h-[390px] display object-cover mx-auto mb-4 shadow-md scale-100"
-  />
-  <div class="p-10 -mt-3">
-    <h2>
-      {name}
-    </h2>
-    <h5 class="text-accent">
-      {title}
-    </h5>
+<div class="bg-container w-full rounded-lg overflow-hidden shadow-root-card">
+  <div class="relative w-full">
+    <div class="aspect-square">
+      <ProfilePicture
+        image={image}
+        alt={`${name} profile picture`}
+        className="w-full h-full object-cover object-top"
+      />
+    </div>
+  </div>
+
+  <div class="px-4 py-6 space-y-3">
+    <h2 class="text-4xl leading-tight">{name}</h2>
+    <h5 class="text-accent text-3xl">{title}</h5>
+
+    <div class="space-y-2 pl-6 pb-4 text-md sm:text-lg">
+      {company && <p class="leading-relaxed text-md sm:text-lg">{company}</p>}
+    </div>
   </div>
 </div>
 
 <style>
-  .speaker-card img {
+  img {
     filter: grayscale(100%);
     transition: filter 0.3s ease, transform 0.3s ease;
   }
 
 </style>
-
-  <!.speaker-card:hover img {filter: grayscale(0%);}>
-  <!"speaker-card relative bg-container rounded-lg overflow-hidden w-[300px] md:w-auto lg:w-auto flex-shrink-0">

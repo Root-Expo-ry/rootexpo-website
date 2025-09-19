@@ -3,6 +3,10 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      fontFamily: {
+        jetbrains: ['JetBrains', 'monospace'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       colors: {
         accent: "var(--accent)",
         background: "var(--background)",

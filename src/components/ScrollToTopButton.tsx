@@ -29,7 +29,7 @@ export default function ScrollToTopButton() {
         bg-background text-white border-2 border-white rounded-full
         cursor-pointer z-[1000]
         transition-opacity duration-300 ease-in-out
-        hover:border-accent hover:text-accent
+        hover:border-accent hover:text-accent focus:outline-none touch-manipulation active:border-accent active:text-accent focus:border-white focus:text-white
         ${isVisible ? 'opacity-100' : 'opacity-0'}
     `}
     >

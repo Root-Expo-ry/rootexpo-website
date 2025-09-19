@@ -1,79 +1,19 @@
 ---
-import SpeakerCard from './SpeakerCard.astro';
-import Title from "../components/Title.astro";
-import CardTemplate from './CardTemplate.tsx';
-import CardTemplate2 from './CardTemplate2.astro';
+import Title from "./Title.astro";
+import speakers from "../data/speakers.json";
+
+import SpeakerSwiper from "./SpeakerSwiper.jsx";
+
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+const speakerList = speakers;
 ---
 
-<section class="speaker-section">
-  <Title
-      text=" Our amazing speakers"
-      class="text-5xl font-bold py-20 text-center text-accent"
-  />
-  <section class="overflow-hidden px-6">
-    <div class="flex overflow-x-auto space-x-1 snap-x snap-mandatory md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 gap-8 max-w-[1280px] mx-auto px-6 mb-8">
+<Title text={title || ""} />
+<div>
+  <SpeakerSwiper speakers={speakerList} client:load/>
+</div>
 
-      <SpeakerCard
-        image="/speakers/randomdude.jpg"
-        name="A random guy"
-        title="Tech Startup, Chief Executive Officer"
-        text=""
-        class="snap-center"
-      />
-
-      <SpeakerCard
-        image="/speakers/randomdude2.jpg"
-        name="Testi"
-        title="Joku, Toimari"
-        text=""
-        class="snap-center"
-      />
-
-      <SpeakerCard
-        image="/speakers/randomdude3.jpg"
-        name="Petteri"
-        title="Rootexpo, Chief Technical Officer"
-        text=""
-        class="snap-center"
-      />
-      <CardTemplate 
-        image="/speakers/randomdude3.jpg"
-        name="Petteri"
-        title="Rootexpo, Chief Technical Officer"
-        text=""
-        className="snap-center"
-      ></CardTemplate>
-      
-      <CardTemplate2 
-        image="/images/profile/oskari_arvo.jpg"
-        name="Oskari Arvo"
-        title="Sponsorships & Web Development"
-        email="oskari.arvo@rootexpo.fi"
-        phone="045 880 5996"
-        linkedin="https://www.linkedin.com/in/oskari-arvo-a1ba0a205/"
-        text=""
-        className="snap-center"
-      />
-
-
-
-
-    </div>
-    <br>
-  </section>
-</section>
-
-<style>
-  .speaker-section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .speaker-section p {
-    text-align: center;
-    margin-bottom: 2rem;
-    font: montserrat;
-  }
-</style>
-
-
-<! grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 max-w-[1280px] mx-auto px-6 mb-8>

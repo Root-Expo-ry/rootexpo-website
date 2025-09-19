@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Mikko Hyppönen",
+    "title": "Chief Research Officer",
+    "image": "/speakers/mh.jpg",
+    "company": "Sensofusion"
+  },
+  {
+    "name": "Tarmo Pajunen",
+    "title": "CTO | Co-Founder",
+    "image": "/speakers/tarmo.jpg",
+    "company": "Brillian"
+  },
+  {
+    "name": "Joonas Korgan",
+    "title": "Chief Executive Officer",
+    "image": "/speakers/joonas.jpg",
+    "company": "Identio"
+  },
+  {
+    "name": "Juha-Matti Santala",
+    "title": "Full-Stack Developer",
+    "image": "/speakers/juhis.jpg",
+    "company": "Reaktor"
+  }
+]
