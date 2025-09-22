@@ -1,11 +1,12 @@
 import React from "react";
 import { FaLinkedin, FaGlobe } from "react-icons/fa";
+// import { Icon } from "astro-icon/components"; // ei toimi jos pelkästään importtaa
 
 interface SpeakerCardProps {
   name: string;
   title: string;
   image: string;
-  company?: string;
+  company?: string; 
   linkedin?: string;
   website?: string;
 }
