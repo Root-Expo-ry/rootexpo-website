@@ -77,6 +77,11 @@ const partners: Partner[] = [
     name: "EU",
     homepageLink: new URL("https://europa.eu"),
     logo: "/partnerLogos/EU_Co_Outline.png",
+  },
+  {
+    name: "Teleste",
+    homepageLink: new URL("https://www.teleste.com"),
+    logo: "/partnerLogos/Teleste_white.png",
   }
 ];
 
