@@ -64,24 +64,6 @@
             "linkedin": "https://www.linkedin.com/in/rikulauttia/",
             "image": "/images/profile/riku_lauttia.jpg",
             "text": ""
-        },
-        {
-            "name": "Oskari Arvo",
-            "title": "Partnership Manager",
-            "email": "oskari.arvo@rootexpo.fi",
-            "phone": "045 880 5996",
-            "linkedin": "https://www.linkedin.com/in/oskari-arvo-a1ba0a205/",
-            "image": "/images/profile/oskari_arvo.jpg",
-            "text": ""
-        },
-        {
-            "name": "Eero Antila",
-            "title": "Recruitment",
-            "email": "eero.antila@rootexpo.fi",
-            "phone": "045 316 6986",
-            "linkedin": "https://www.linkedin.com/in/eero-antila/",
-            "image": "/images/profile/eero_antila.jpg",
-            "text": ""
         }
     ],
     "tech": [
@@ -111,6 +93,15 @@
             "linkedin": "https://www.linkedin.com/in/juho-torkkeli/",
             "image": "/images/profile/juho_torkkeli.jpg",
             "text": ""
+        },
+        {
+            "name": "Oskari Arvo",
+            "title": "Product Lead",
+            "email": "oskari.arvo@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/oskari-arvo-a1ba0a205/",
+            "image": "/images/profile/oskari_arvo.jpg",
+            "text": ""
         }
     ],
     "marketing": [
@@ -121,6 +112,91 @@
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/janinapaasila/",
             "image": "/images/profile/janina_paasila.jpg",
+            "text": ""
+        },
+        {
+            "name": "Sinna Kari",
+            "title": "Marketing Manager",
+            "email": "",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/sinna-kari-746785358/",
+            "image": "/images/profile/sinna_kari.jpg",
+            "text": ""
+        },
+        {
+            "name": "Iitu Kuusrainen",
+            "title": "Marketing Manager",
+            "email": "",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/iitu-kuusrainen/",
+            "image": "/images/profile/iitu_kuusrainen.jpg",
+            "text": ""
+        }
+    ],
+    "production": [
+        {
+            "name": "Oskari Kyllönen",
+            "title": "Production Lead",
+            "email": "oskari.kyllonen@rootexpo.fi",
+            "phone": "",
+            "linkedin": "",
+            "image": "",
+            "text": ""
+        },
+        {
+            "name": "Eero Antila",
+            "title": "Program Lead",
+            "email": "eero.antila@rootexpo.fi",
+            "phone": "045 316 6986",
+            "linkedin": "https://www.linkedin.com/in/eero-antila/",
+            "image": "/images/profile/eero_antila.jpg",
+            "text": ""
+        },
+        {
+            "name": "Patrik Raita",
+            "title": "Production Manager",
+            "email": "",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/patrik-raita-4bb45629b/",
+            "image": "/images/profile/patrik_raita.jpg",
+            "text": ""
+        }
+    ],
+    "movie": [
+        {
+            "name": "Tobia Sillanpää",
+            "title": "Short videos",
+            "email": "",
+            "phone": "",
+            "linkedin": "",
+            "image": "",
+            "text": ""
+        },
+        {
+            "name": "Odelia Stenudd",
+            "title": "Short videos",
+            "email": "",
+            "phone": "",
+            "linkedin": "",
+            "image": "",
+            "text": ""
+        },
+        {
+            "name": "Julia Ojala",
+            "title": "Photography",
+            "email": "",
+            "phone": "",
+            "linkedin": "",
+            "image": "",
+            "text": ""
+        },
+        {
+            "name": "Georg Wahlroos",
+            "title": "Photography",
+            "email": "",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/georg-wahlroos-689267180/",
+            "image": "/images/profile/georg_wahlroos.jpg",
             "text": ""
         }
     ]

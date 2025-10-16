@@ -12,6 +12,9 @@ import Image from "../components/Image.astro";
 import CustomContactSection from "../components/CustomContactSection.astro";
 import FaqIndex from "../components/FaqIndex.astro";
 import SpeakerSection from "../components/SpeakerSection.astro";
+import JobDatingSection from "../components/JobDatingSection.astro";
+import ScheduleSection from "../components/ScheduleSection.astro"
+import AfterpartySection from "../components/AfterpartySection.astro"
 ---
 
 <Layout
@@ -84,23 +87,26 @@ import SpeakerSection from "../components/SpeakerSection.astro";
 
     <Section>
       <Title text="JOB DATING." />
-      <Body text="You'll leave with more than you came for." />
+      <JobDatingSection />
     </Section>
 
     <Section>
-      <Title text="MUST-SEE MOMENTS." />
-      <Body
-        text="World-class speakers. Hands-on workshops. Exclusive afterwork party. Stay tuned!"
-      />
+      <Title text="PROGRAM SCHEDULE." />
+      <ScheduleSection />
     </Section>
 
     <Section>
-      <Title text="ALREADY IN MOTION." />
+      <Title text="AFTERPARTY." />
+      <AfterpartySection />
+    </Section>
+
+    <Section>
+      <Title text="PARTNERS." />
       <StaticPartnersPage />
     </Section>
 
     <Section>
-      <Title text="Frequently Asked Questions (FAQ)" />
+      <Title text="Frequently Asked Questions (FAQ)." />
       <FaqIndex />
     </Section>
 
