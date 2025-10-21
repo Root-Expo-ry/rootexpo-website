@@ -82,6 +82,11 @@ const partners: Partner[] = [
     name: "Teleste",
     homepageLink: new URL("https://www.teleste.com"),
     logo: "/partnerLogos/Teleste_white.png",
+  },
+  {
+    name: "Sanoma Media",
+    homepageLink: new URL("https://www.sanoma.fi"),
+    logo: "/partnerLogos/sanoma_white.png",
   }
 ];
 
