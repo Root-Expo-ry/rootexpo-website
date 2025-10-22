@@ -87,6 +87,11 @@ const partners: Partner[] = [
     name: "Sanoma Media",
     homepageLink: new URL("https://www.sanoma.fi"),
     logo: "/partnerLogos/sanoma_white.png",
+  },
+  {
+    name: "Lounea",
+    homepageLink: new URL("https://www.lounea.fi"),
+    logo: "/partnerLogos/lounea_valkoinen.png",
   }
 ];
 
