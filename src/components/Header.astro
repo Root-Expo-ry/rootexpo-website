@@ -27,9 +27,14 @@ import Logo from "./Logo.astro";
     </div>
 
     <!-- Desktop links: only show on large screens -->
-    <div class="hidden lg:flex gap-6 mr-4">
+    <div class="hidden lg:flex gap-6 mr-4 align-center">
       <HeaderLink href="/for-partners">For Partners</HeaderLink>
       <HeaderLink href="/contact">Contact</HeaderLink>
+      <a
+        href="https://match.opportune.fi"
+        class="hover:no-underline self-stretch text-center border-2 border-accent px-2 py-1 rounded-lg bg-accent hover:opacity-85 text-white hover:text-white"
+        >Register</a
+      >
       <!--- <HeaderLink href="/recruiting">Recruiting</HeaderLink> -->
     </div>
 
@@ -62,6 +67,11 @@ import Logo from "./Logo.astro";
       >
         <a href="/for-partners" class="hover:underline">FOR PARTNERS</a>
         <a href="/contact" class="hover:underline">CONTACT</a>
+        <a
+          href="https://match.opportune.fi"
+          class="hover:no-underline mt-4 self-stretch text-center border-2 border-accent px-2 py-1 rounded-lg bg-accent hover:opacity-85 text-white hover:text-white"
+          >REGISTER</a
+        >
         <!--- <a href="/recruiting" class="hover:underline">RECRUITING</a> --->
       </div>
     </div>
