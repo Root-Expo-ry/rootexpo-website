@@ -24,11 +24,6 @@ const partners: Partner[] = [
     logo: "/partnerLogos/cgi_white.png",
   },
   {
-    name: "Turun kaupunki",
-    homepageLink: new URL("https://www.turku.fi"),
-    logo: "/partnerLogos/turku.png"
-  },
-  {
     name: "Kongsberg",
     homepageLink: new URL("https://www.kongsberg.com"),
     logo: "/partnerLogos/kongsberg_white.png",
@@ -54,11 +49,6 @@ const partners: Partner[] = [
     logo: "/partnerLogos/wapice-logo.webp",
   },
   {
-    name: "Turun Yliopisto UTU",
-    homepageLink: new URL("https://www.utu.fi"),
-    logo: "/partnerLogos/UTU_logo.png",
-  },
-  {
     name: "TEK ry",
     homepageLink: new URL("https://www.tek.fi"),
     logo: "/partnerLogos/TEK_logo.png",
@@ -67,16 +57,6 @@ const partners: Partner[] = [
     name: "Twoday",
     homepageLink: new URL("https://www.twoday.fi"),
     logo: "/partnerLogos/twoday.png",
-  },
-  {
-    name: "Purje-hanke",
-    homepageLink: new URL("https://www.ely-keskus.fi/purje-hanke"),
-    logo: "/partnerLogos/Purje_logo_white.png",
-  },
-  {
-    name: "EU",
-    homepageLink: new URL("https://europa.eu"),
-    logo: "/partnerLogos/EU_Co_Outline.png",
   },
   {
     name: "Teleste",
@@ -97,6 +77,34 @@ const partners: Partner[] = [
     name: "GE HealthCare",
     homepageLink: new URL("https://www.gehealthcare.fi"),
     logo: "/partnerLogos/GE_HealthCare.png",
+  }
+];
+
+const supporting: Partner[] = [
+  {
+    name: "Turun kaupunki",
+    homepageLink: new URL("https://www.turku.fi"),
+    logo: "/partnerLogos/turku.png"
+  },
+  {
+    name: "Purje-hanke",
+    homepageLink: new URL("https://www.ely-keskus.fi/purje-hanke"),
+    logo: "/partnerLogos/Purje_logo_white.png",
+  },
+  {
+    name: "EU",
+    homepageLink: new URL("https://europa.eu"),
+    logo: "/partnerLogos/EU_Co_Outline.png",
+  },
+  {
+    name: "Turku Audio",
+    homepageLink: new URL("https://turkuaudio.fi"),
+    logo: "/partnerLogos/turku-audio.png",
+  },
+  {
+    name: "Mankeli Solutions Oy",
+    homepageLink: new URL("https://mankelisolutions.fi"),
+    logo: "/partnerLogos/mankeli.svg",
   }
 ];
 
@@ -141,11 +149,6 @@ const ecosystem: Partner[] = [
     name: "TIO ry",
     homepageLink: new URL("https://tio.fi"),
     logo: "/partnerLogos/TIO_logo_white.png",
-  },
-  {
-    name: "Mankeli Solutions Oy",
-    homepageLink: new URL("https://mankelisolutions.fi"),
-    logo: "/partnerLogos/mankeli.svg",
   }
 ];
 
@@ -202,6 +205,34 @@ export default function StaticPartnersPage() {
           ))}
         </div>
       </section>
+
+      <h5 className="text-center text-accent">
+        SUPPORTING PARTNERS:
+      </h5>
+      <section>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mb-8 bg-container rounded-lg py-4 px-4 shadow-root-card">
+          {supporting.map((support) => (
+            <a
+              href={support.homepageLink.toString()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <div className="flex flex-col items-center gap-4 p-4">
+                <span className="flex h-24 w-36 items-center justify-center">
+                  <img
+                    src={support.logo}
+                    className="max-w-full max-h-full filter brightness-0 invert"
+
+
+                  />
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
       <h5 className="text-center text-accent">
         ECOSYSTEM:
       </h5>
