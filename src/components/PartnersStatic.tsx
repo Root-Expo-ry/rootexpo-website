@@ -72,6 +72,11 @@ const partners: Partner[] = [
     name: "Lounea",
     homepageLink: new URL("https://www.lounea.fi"),
     logo: "/partnerLogos/lounea_valkoinen.png",
+  },
+  {
+    name: "GE HealthCare",
+    homepageLink: new URL("https://www.gehealthcare.fi"),
+    logo: "/partnerLogos/GE_HealthCare.png",
   }
 ];
 
