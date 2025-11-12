@@ -99,7 +99,7 @@ const supporting: Partner[] = [
   {
     name: "Turku Audio",
     homepageLink: new URL("https://turkuaudio.fi"),
-    logo: "/partnerLogos/turku-audio.png",
+    logo: "/partnerLogos/turku-audio-white.png",
   },
   {
     name: "Mankeli Solutions Oy",
