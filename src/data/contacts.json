@@ -19,6 +19,15 @@
             "text": "Business ID: 3032318-5"
         },
         {
+            "name": "Tom Pippuri",
+            "title": "Head of Operations",
+            "email": "tom.pippuri@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/tom-pippuri/",
+            "image": "/images/profile/tom_pippuri.jpg",
+            "text": ""
+        },
+        {
             "name": "Marius Ranta",
             "title": "Event Producer",
             "email": "marius.ranta@rootexpo.fi",
@@ -30,17 +39,8 @@
     ],
     "sales": [
         {
-            "name": "Tom Pippuri",
-            "title": "Head of Sales",
-            "email": "tom.pippuri@rootexpo.fi",
-            "phone": "",
-            "linkedin": "https://www.linkedin.com/in/tom-pippuri/",
-            "image": "/images/profile/tom_pippuri.jpg",
-            "text": ""
-        },
-        {
             "name": "Eetu Salminen",
-            "title": "Head of Partnerships",
+            "title": "Head of Sales",
             "email": "eetu.salminen@rootexpo.fi",
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/eetusalminen22333/",
@@ -63,6 +63,24 @@
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/rikulauttia/",
             "image": "/images/profile/riku_lauttia.jpg",
+            "text": ""
+        },
+        {
+            "name": "Antti Huotari",
+            "title": "Sales Manager",
+            "email": "antti.huotari@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/antti-huotari-b785142aa/",
+            "image": "",
+            "text": ""
+        },
+        {
+            "name": "Henrik Koskinen",
+            "title": "Sales Manager Sweden",
+            "email": "henrik.koskinen@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/hkk1/",
+            "image": "",
             "text": ""
         }
     ],
@@ -106,17 +124,8 @@
     ],
     "marketing": [
         {
-            "name": "Janina Paasila",
-            "title": "Head of Marketing, AD",
-            "email": "janina.paasila@rootexpo.fi",
-            "phone": "",
-            "linkedin": "https://www.linkedin.com/in/janinapaasila/",
-            "image": "/images/profile/janina_paasila.jpg",
-            "text": ""
-        },
-        {
             "name": "Sinna Kari",
-            "title": "Marketing Manager",
+            "title": "Head of Marketing",
             "email": "sinna.kari@rootexpo.fi",
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/sinna-kari-746785358/",
@@ -130,6 +139,15 @@
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/iitu-kuusrainen/",
             "image": "/images/profile/iitu_kuusrainen.jpg",
+            "text": ""
+        },
+        {
+            "name": "Janina Paasila",
+            "title": "AD",
+            "email": "janina.paasila@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/janinapaasila/",
+            "image": "/images/profile/janina_paasila.jpg",
             "text": ""
         }
     ],
