@@ -39,21 +39,21 @@
     ],
     "sales": [
         {
-            "name": "Eetu Salminen",
-            "title": "Head of Sales",
-            "email": "eetu.salminen@rootexpo.fi",
-            "phone": "",
-            "linkedin": "https://www.linkedin.com/in/eetusalminen22333/",
-            "image": "/images/profile/eetu_salminen.jpg",
-            "text": ""
-        },
-        {
             "name": "Eero Pirkkalainen",
-            "title": "Sales Manager",
+            "title": "Head of Sales",
             "email": "eero.pirkkalainen@rootexpo.fi",
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/eero-pirkkalainen-a205b0264/",
             "image": "/images/profile/eero_pirkkalainen.jpg",
+            "text": ""
+        },
+        {
+            "name": "Eetu Salminen",
+            "title": "Head of Partnerships",
+            "email": "eetu.salminen@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/eetusalminen22333/",
+            "image": "/images/profile/eetu_salminen.jpg",
             "text": ""
         },
         {
