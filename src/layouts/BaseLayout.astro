@@ -5,12 +5,17 @@ import Footer from "../components/Footer.astro";
 import ScrollProgressBar from "../components/ScrollProgressBar";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
-const { title, description, tags } = Astro.props;
+const { title, description, tags, image } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} tags={tags} />
+    <BaseHead
+      title={title}
+      description={description}
+      tags={tags}
+      image={image}
+    />
   </head>
 
   <body class="">
