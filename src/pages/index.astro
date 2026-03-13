@@ -13,6 +13,7 @@ import SpeakerSection from "../components/SpeakerSection.astro";
 import JobDatingSection from "../components/JobDatingSection.astro";
 import ScheduleSection from "../components/ScheduleSection.astro";
 import AfterpartySection from "../components/AfterpartySection.astro";
+import CalendarBookingEmbed from "../components/CalendarBookingEmbed.astro";
 ---
 
 <Layout
@@ -59,16 +60,17 @@ import AfterpartySection from "../components/AfterpartySection.astro";
       />
     </Section>
 
-    {
-      /*
-  <Section>
-    <CustomContactSection
-    title="Interested in becoming a partner? Contact us!"
-    people={["Tom Pippuri", "Eero Pirkkalainen"]}
-    />
-  </Section>
-  */
-    }
+    <Section>
+      <Title text="Become a Partner." />
+      <div class="flex justify-center items-center w-full my-10 pt-14">
+        <a
+          href="/contact"
+          class="inline-block bg-[#B962C8] hover:opacity-85 hover:no-underline text-white hover:text-white text-5xl md:text-6xl font-medium py-8 md:py-10 px-14 md:px-20 rounded-xl transition-transform transform hover:scale-105 shadow-lg max-w-full text-center"
+        >
+          Book a Meeting
+        </a>
+      </div>
+    </Section>
 
     <Section>
       <Title text="YOU DON'T NEED TO BE PERFECT — JUST CURIOUS." />

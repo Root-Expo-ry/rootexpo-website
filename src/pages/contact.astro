@@ -3,11 +3,12 @@ import Content from "../components/Content.astro";
 import Title from "../components/Title.astro";
 import Layout from "../layouts/BaseLayout.astro";
 import ContactSection from "../components/ContactSection.astro";
+import CalendarBookingEmbed from "../components/CalendarBookingEmbed.astro";
 ---
 
 <Layout
   title="Contact Root Expo Organizers"
-  description="Project team and contact information for Root Expo."
+  description="Project contact information for Root Expo."
   tags={[
     "Root Expo",
     "Turku",
@@ -17,27 +18,15 @@ import ContactSection from "../components/ContactSection.astro";
   ]}
 >
   <Content>
-    <Title
-      text="Contact our amazing team"
-      class="text-5xl font-bold py-20 text-center"
-    />
+    <Title text="Contact Us" class="text-5xl font-bold py-20 text-center" />
+    <CalendarBookingEmbed />
+    <br />
+    <br />
     <ContactSection title="Sales & Partnerships." people="sales" />
     <br />
     <br />
     <ContactSection title="Operations." people="projectLead" />
     <br />
     <br />
-    <ContactSection title="Marketing." people="marketing" />
-    <br />
-    <br />
-    <ContactSection title="Technology & Product." people="tech" />
-    <br />
-    <br />
-    <ContactSection title="Production & Program." people="production" />
-    <br />
-    <br />
-    <!-- <ContactSection title="Movie & Photography." people="movie" />
-    <br />
-    <br /> -->
   </Content>
 </Layout>

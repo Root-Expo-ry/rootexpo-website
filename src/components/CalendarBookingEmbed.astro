@@ -1,0 +1,18 @@
+---
+const {
+  title = "Book a Meeting",
+  url = "https://meetings-eu1.hubspot.com/eero-pirkkalainen?uuid=e45284c3-53b9-4403-92d7-e4f4ad94c22f&embed=true",
+} = Astro.props;
+---
+
+<div class="max-w-[820px] xl:max-w-[1280px] mx-auto px-6">
+  <div
+    class="bg-container w-full rounded-lg overflow-hidden shadow-root-card p-4 sm:p-8"
+  >
+    <h2 class="text-4xl leading-tight text-center">{title}</h2>
+    <iframe
+      class="w-full h-[700px] sm:h-[700px] rounded-lg overflow-hidden relative border-none"
+      src={url}
+      title={title}></iframe>
+  </div>
+</div>

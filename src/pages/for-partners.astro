@@ -1,12 +1,12 @@
 ---
 import Body from "../components/Body.astro";
 import Content from "../components/Content.astro";
-import MatterportEmbed from "../components/MatterportEmbed.astro";
 import Pricing from "../components/Pricing.astro";
 import Section from "../components/Section.astro";
 import Title from "../components/Title.astro";
 import Layout from "../layouts/BaseLayout.astro";
 import FaqForPartners from "../components/FaqForPartners.astro";
+import CalendarBookingEmbed from "../components/CalendarBookingEmbed.astro";
 ---
 
 <Layout
@@ -73,12 +73,13 @@ import FaqForPartners from "../components/FaqForPartners.astro";
       <Body
         text="Contact us for detailed pricing information and to discuss how we can best support your participation in Root Expo 2026."
       />
-      <br />
-      <br />
-      <br />
       <!---
         <Pricing
        -->
     </Section>
+
+    <CalendarBookingEmbed />
+    <br />
+    <br />
   </Content>
 </Layout>
