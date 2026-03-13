@@ -1,24 +1,6 @@
 {
     "projectLead": [
         {
-            "name": "Digit ry",
-            "title": "Project Team",
-            "email": "digit@utu.fi",
-            "phone": "",
-            "linkedin": "",
-            "image": "/images/profile/digit_bg.webp",
-            "text": "Business ID: 2285810-4"
-        },
-        {
-            "name": "Asteriski ry",
-            "title": "Invoicing",
-            "email": "hallitus@asteriski.fi",
-            "phone": "",
-            "linkedin": "",
-            "image": "/images/profile/asteriski_bg.webp",
-            "text": "Business ID: 3032318-5"
-        },
-        {
             "name": "Tom Pippuri",
             "title": "Head of Operations",
             "email": "tom.pippuri@rootexpo.fi",
@@ -29,12 +11,21 @@
         },
         {
             "name": "Marius Ranta",
-            "title": "Event Producer",
+            "title": "President",
             "email": "marius.ranta@rootexpo.fi",
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/marius-ranta/",
             "image": "/images/profile/marius_ranta.jpg",
             "text": ""
+        },
+        {
+            "name": "Root Expo ry",
+            "title": "Invoicing",
+            "email": "",
+            "phone": "",
+            "linkedin": "",
+            "image": "/images/profile/rootexpo_bg.png",
+            "text": "Business ID: 3594286-6"
         }
     ],
     "sales": [
@@ -145,7 +136,7 @@
     "production": [
         {
             "name": "Oskari Kyllönen",
-            "title": "Production Lead",
+            "title": "Head of Production",
             "email": "oskari.kyllonen@rootexpo.fi",
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/oskari-kyllönen-784467332",
@@ -168,6 +159,15 @@
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/patrik-raita-4bb45629b/",
             "image": "/images/profile/patrik_raita.jpg",
+            "text": ""
+        },
+        {
+            "name": "Sara Tognetty",
+            "title": "Head of Program",
+            "email": "sara.tognetty@rootexpo.fi",
+            "phone": "",
+            "linkedin": "https://www.linkedin.com/in/sara-tognetty-b407a8247/",
+            "image": "/images/profile/sara_tognetty.jpeg",
             "text": ""
         }
     ],
@@ -209,4 +209,4 @@
             "text": ""
         }
     ]
-}
+}      

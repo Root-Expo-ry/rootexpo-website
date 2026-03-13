@@ -1,0 +1,22 @@
+{
+    "projectLead": [
+        {
+            "name": "Digit ry",
+            "title": "Project Team",
+            "email": "digit@utu.fi",
+            "phone": "",
+            "linkedin": "",
+            "image": "/images/profile/digit_bg.webp",
+            "text": "Business ID: 2285810-4"
+        },
+        {
+            "name": "Asteriski ry",
+            "title": "Invoicing",
+            "email": "hallitus@asteriski.fi",
+            "phone": "",
+            "linkedin": "",
+            "image": "/images/profile/asteriski_bg.webp",
+            "text": "Business ID: 3032318-5"
+        }
+    ]
+}
