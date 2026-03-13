@@ -62,7 +62,7 @@
             "email": "antti.huotari@rootexpo.fi",
             "phone": "",
             "linkedin": "https://www.linkedin.com/in/antti-huotari-b785142aa/",
-            "image": "",
+            "image": "/images/profile/antti_huotari.jpg",
             "text": ""
         },
         {
@@ -209,4 +209,4 @@
             "text": ""
         }
     ]
-}      
+}
