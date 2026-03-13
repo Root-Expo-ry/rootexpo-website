@@ -1,0 +1,37 @@
+---
+import Content from "../components/Content.astro";
+import Title from "../components/Title.astro";
+import Layout from "../layouts/BaseLayout.astro";
+import ContactSection from "../components/ContactSection.astro";
+---
+
+<Layout
+  title="Contact Root Expo Team"
+  description="Project team for Root Expo."
+  tags={["Root Expo", "Turku", "Contact Team", "Digit ry", "Asteriski ry"]}
+>
+  <Content>
+    <Title
+      text="Our amazing team"
+      class="text-5xl font-bold py-20 text-center"
+    />
+    <ContactSection title="Marketing." people="marketing" />
+    <br />
+    <br />
+    <ContactSection title="Production & Program." people="production" />
+    <br />
+    <br />
+    <!-- <ContactSection title="Movie & Photography." people="movie" />
+    <br />
+    <br /> -->
+    <ContactSection title="Technology & Product." people="tech" />
+    <br />
+    <br />
+    <ContactSection title="Sales & Partnerships." people="sales" />
+    <br />
+    <br />
+    <ContactSection title="Operations." people="projectLead" />
+    <br />
+    <br />
+  </Content>
+</Layout>
