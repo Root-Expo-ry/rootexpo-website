@@ -2,7 +2,7 @@
 import Title from "./Title.astro";
 import speakers from "../data/speakers.json";
 
-import SpeakerSwiper from "./SpeakerSwiper.jsx";
+import SpeakerSwiper from "./SpeakerSwiper.astro";
 
 interface Props {
   title?: string;
@@ -14,6 +14,5 @@ const speakerList = speakers;
 
 <Title text={title || ""} />
 <div>
-  <SpeakerSwiper speakers={speakerList} client:load/>
+  <SpeakerSwiper speakers={speakerList}/>
 </div>
-
